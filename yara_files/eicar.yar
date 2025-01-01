@@ -1,4 +1,4 @@
-rule EICARTestFile.A!con {
+rule EICARTestFile_A_con {
     meta:
         description = "EICAR test file string (full)"
 
@@ -9,7 +9,7 @@ rule EICARTestFile.A!con {
         $s
 }
 
-rule EICARTestFile.B!con {
+rule EICARTestFile_B_con {
     meta:
         description = "EICAR test file string (shortened)"
 
