@@ -17,9 +17,17 @@ os.makedirs("yara_files", exist_ok=True)
 def download_threat_db():
     global threat_db, yara_rules
     
+    # Your GitHub token
+    github_token = "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"
+
+    # GitHub API headers with the token for authentication
+    headers = {
+        "Authorization": f"token {github_token}"
+    }
+    
     # Download malware hash database
     hash_url = "https://raw.githubusercontent.com/Kybero/Kybero-Control/main/hash/hash.txt"
-    hashes_response = requests.get(hash_url)
+    hashes_response = requests.get(hash_url, headers=headers)
     
     with open("hash.txt", "w") as file:
         file.write(hashes_response.text)
@@ -33,7 +41,7 @@ def download_threat_db():
     
     # Download all YARA rule files in the GitHub folder
     folder_url = "https://api.github.com/repos/Kybero/Kybero-Control/contents/yara"
-    response = requests.get(folder_url)
+    response = requests.get(folder_url, headers=headers)
     
     if response.status_code == 200:
         try:
@@ -43,7 +51,7 @@ def download_threat_db():
                     download_url = file_info["download_url"]
                     file_path = os.path.join("yara_files", file_info["name"])
                     
-                    yara_response = requests.get(download_url)
+                    yara_response = requests.get(download_url, headers=headers)
                     if yara_response.status_code == 200:
                         with open(file_path, "w") as file:
                             file.write(yara_response.text)
@@ -53,15 +61,6 @@ def download_threat_db():
             print("Error parsing the JSON response from GitHub API.")
     else:
         print("Failed to retrieve the file list from GitHub API:", response.text)
-    
-    for file_info in response:
-        if file_info["name"].endswith(".yar"):
-            download_url = file_info["download_url"]
-            file_path = os.path.join("yara_files", file_info["name"])
-            
-            yara_response = requests.get(download_url)
-            with open(file_path, "w") as file:
-                file.write(yara_response.text)
     
     # Compile all YARA rule files
     rule_files = glob.glob("yara_files/*.yar")
