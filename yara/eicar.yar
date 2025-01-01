@@ -3,7 +3,7 @@ rule EICARTestFile.A!con {
         description = "EICAR test file string (full)"
 
     strings:
-        $s = "/^X5O!P%@AP\[4\\PZX54\(P\^\)7CC\)7\}\$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!\$H\+H\*\s*$/"
+        $s = "X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
 
     condition:
         all of them
