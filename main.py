@@ -16,9 +16,6 @@ os.makedirs("yara_files", exist_ok=True)
 # Download threat DB and all YARA rules from GitHub
 def download_threat_db():
     global threat_db, yara_rules
-    
-    # Your GitHub token
-    # github_token = "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"
 
     # GitHub API headers with the token for authentication
     headers = {
