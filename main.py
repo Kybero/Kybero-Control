@@ -62,8 +62,8 @@ def download_threat_db():
     else:
         print("Failed to retrieve the file list from GitHub API:", response.text)
     
-    # Compile all YARA rule files
-    rule_files = glob.glob("yara_files/*.yar")
+    # Compile all YARA rule files (including subdirectories)
+    rule_files = glob.glob("yara_files/**/*.yar", recursive=True)
     yara_rules = yara.compile(filepaths={f"rule_{i}": path for i, path in enumerate(rule_files)})
 
 # Run download when starting
