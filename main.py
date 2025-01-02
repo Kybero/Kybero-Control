@@ -13,6 +13,9 @@ yara_rules = None
 # Create local rules directory
 os.makedirs("yara_files", exist_ok=True)
 
+# Get GitHub PAT
+github_token = os.getenv('github_token')
+
 # Download threat DB and all YARA rules from GitHub
 def download_threat_db():
     global threat_db, yara_rules
