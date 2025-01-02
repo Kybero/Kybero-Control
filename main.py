@@ -18,7 +18,7 @@ def download_threat_db():
     global threat_db, yara_rules
     
     # Your GitHub token
-    github_token = "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"
+    # github_token = "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"
 
     # GitHub API headers with the token for authentication
     headers = {
