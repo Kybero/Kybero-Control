@@ -1,6 +1,6 @@
-rule Adware_DomalQ_A_con {
+rule Adware_DomaIQ_A_con {
     meta:
-        description = "Detects DomalQ"
+        description = "Detects DomaIQ"
         author = "Kybero Labs"
 
     strings:
