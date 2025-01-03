@@ -11,5 +11,5 @@ rule Adware_InstallBrain_A_con {
         $c2 = "Certification"
 
     condition:
-        all of $s* and ( $c1 or $c2 )
+        all of ($s*) and ($c1 or $c2)
 }
