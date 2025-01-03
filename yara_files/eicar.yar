@@ -6,8 +6,10 @@ rule EICARTestFile_A_con {
     strings:
         $s = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
 
+        $x = "This program cannot be run in DOS mode"
+
     condition:
-        $s
+        $s and not $x
 }
 
 rule EICARTestFile_B_con {
@@ -18,8 +20,9 @@ rule EICARTestFile_B_con {
     strings:
         $s = "EICAR-STANDARD-ANTIVIRUS-TEST-FILE!"
 
-        $f = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
+        $f1 = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
+        $f2 = "This program cannot be run in DOS mode"
 
     condition:
-        $s and not $f
+        $s and not $f1 and not $f2
 }
