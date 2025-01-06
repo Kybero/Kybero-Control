@@ -35,3 +35,15 @@ rule Trojan_Agent_C_con {
     condition:
         all of them
 }
+
+rule Trojan_Agent_D_con {
+    meta:
+        description = "Detects trojan"
+        author = "Kybero Labs"
+
+    strings:
+        $s1 = "F:\\Office\\Target\\x86\\ship\\postc2r\\x-none\\msoxmled.pdb"
+
+    condition:
+        all of them
+}
