@@ -12,6 +12,8 @@ rule PDFPhishing_Generic_A {
         $s4 = "/Subject (Mukkala mukabula tamil song mp3 free download.       By Laila Alvarez            i Sean Gallup/Getty Images News/Getty Images    Sharing music you')"
         $s5 = "/Author (Tuvude Fukojuru)"
         $s6 = "/Subject (South point movies. Movies Theaters United States Nevada Las Vegas Century South Point 16 2 people preferred this theate)"
+        $s7 = "/Title (Soft aesthetic bio template)"
+        $s8 = "/Author (Yorepufi Tutoyale)"
 
     condition:
         $p and 2 of ($s*)
@@ -72,10 +74,34 @@ rule PDFPhishing_Generic_B {
         $s45 = "https://akvaguru.hu/user/file/"
         $s46 = "http://medicapoland.pl/uploaded/file/"
         $s47 = "https://www.sgestrecho.es/wp-content/plugins/formcraft/file-upload/server/content/files/"
-
-        $s48 = "https://leo-translate.com.ua/wp-content/plugins/formcraft/file-upload/server/content/files/"
-        $s49 = "https://villanakarin.com/userfiles/files/"
-        $s50 = "http://ohmamakitchen.com/uploads/files/"
+        $s48 = "https://traffset.ru/"
+        $s49 = "https://medvor.ru/"
+        $s50 = "http://turatabor.hu/media/"
+        $s51 = "https://rfcorporation.net/wp-content/plugins/super-forms/uploads/php/files/"
+        $s52 = "https://people11people.com/uploads/File/"
+        $s53 = "http://shinserviceodi.ru/wp-content/plugins/super-forms/uploads/php/files/"
+        $s54 = "https://teplitsyoptom.ru/wp-content/plugins/super-forms/uploads/php/files/"
+        $s55 = "https://nmcs.ca/userfiles/files/"
+        $s56 = "http://donaldnathanlaw.com/customer/"
+        $s57 = "http://greaterdeliveranceministries1.com/clients/"
+        $s58 = "https://evg-prague.fr/wp-content/plugins/formcraft/file-upload/server/content/files/"
+        $s59 = "https://gresathouse.com/wp-content/plugins/super-forms/uploads/php/files/"
+        $s60 = "http://www.assignproject.com/wp-content/plugins/formcraft/file-upload/server/content/files/"
+        $s61 = "https://gpuhub.net/wp-content/plugins/super-forms/uploads/php/files/"
+        $s62 = "https://www.asahinafunnels.com/wp-content/plugins/super-forms/uploads/php/files/"
+        $s63 = "https://fietenhaardenenkachels.nl/wp-content/plugins/formcraft/file-upload/server/content/files/"
+        $s64 = "http://ampletrekking.com/userfiles/file/"
+        $s65 = "http://www.1000ena.com/wp-content/plugins/formcraft/file-upload/server/content/files/"
+        $s66 = "http://amwordpress.org/wp-content/plugins/formcraft/file-upload/server/content/files/"
+        $s67 = "https://urbanplace.me/wp-content/plugins/super-forms/uploads/php/files/"
+        $s68 = "https://lashmakerpro.it/wp-content/plugins/super-forms/uploads/php/files/"
+        $s69 = "http://discoveryenglish.org/wp-content/plugins/formcraft/file-upload/server/content/files/"
+        $s70 = "https://michaels-limo.com/wp-content/plugins/formcraft/file-upload/server/content/files/"
+        $s71 = "https://angkorphotographyguide.com/userfiles/file/"
+        $s72 = "https://ladangmimpi.com/contents//files/"
+        $s73 = "https://cremeconferences.com/wp-content/plugins/super-forms/uploads/php/files/"
+        $s74 = "https://www.teppiche-waschen-hamburg.de/wp-content/plugins/formcraft/file-upload/server/content/files/"
+        $s75 = "http://fullcolorspandoeken.nl/userfiles/file/"
 
     condition:
         $p and 1 of ($s*)
