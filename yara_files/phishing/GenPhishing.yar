@@ -14,6 +14,8 @@ rule PDFPhishing_Generic_A {
         $s6 = "/Subject (South point movies. Movies Theaters United States Nevada Las Vegas Century South Point 16 2 people preferred this theate)"
         $s7 = "/Title (Soft aesthetic bio template)"
         $s8 = "/Author (Yorepufi Tutoyale)"
+        $s9 = "/Title (Play word whomp unblocked)"
+        $s10 = "/Author (Nevoketejo Hovajihe)"
 
     condition:
         $p and 2 of ($s*)
