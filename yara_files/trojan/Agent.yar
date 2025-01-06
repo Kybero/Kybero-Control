@@ -17,7 +17,7 @@ rule Trojan_Agent_B_con {
         author = "Kybero Labs"
 
     strings:
-        $s1 = "C:\\Users\Ďŕâĺë\\Desktop\\test.pb"
+        $s1 = "C:\\Users\\Ďŕâĺë\\Desktop\\test.pb"
 
     condition:
         all of them
