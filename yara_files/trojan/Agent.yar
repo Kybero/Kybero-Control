@@ -10,3 +10,15 @@ rule Trojan_Agent_A_con {
     condition:
         all of them
 }
+
+rule Trojan_Agent_B_con {
+    meta:
+        description = "Detects trojan"
+        author = "Kybero Labs"
+
+    strings:
+        $s1 = "C:\Users\Ďŕâĺë\Desktop\test.pb"
+
+    condition:
+        all of them
+}
