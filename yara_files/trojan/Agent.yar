@@ -17,7 +17,7 @@ rule Trojan_Agent_B_con {
         author = "Kybero Labs"
 
     strings:
-        $s1 = "C:\\Users\Ďŕâĺë\\Desktop\\test.pb"
+        $s1 = "C:\\Users\\Ďŕâĺë\\Desktop\\test.pb"
 
     condition:
         all of them
@@ -30,7 +30,7 @@ rule Trojan_Agent_C_con {
         author = "Kybero Labs"
 
     strings:
-        $s1 = "M:\src\04F\_SHW_CF_181213\SWH_DLL_01\HookDll\Release\HookDll.pdb"
+        $s1 = "M:\\src\\04F\\_SHW_CF_181213\\SWH_DLL_01\\HookDll\\Release\\HookDll.pdb"
 
     condition:
         all of them
