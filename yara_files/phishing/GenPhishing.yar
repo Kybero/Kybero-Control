@@ -16,6 +16,8 @@ rule PDFPhishing_Generic_A {
         $s8 = "/Author (Yorepufi Tutoyale)"
         $s9 = "/Title (Play word whomp unblocked)"
         $s10 = "/Author (Nevoketejo Hovajihe)"
+        $s11 = "/Title (Warframe how to get archwing)"
+        $s12 = "/Author (Rotigiri Ruveyake)"
 
     condition:
         $p and 2 of ($s*)
