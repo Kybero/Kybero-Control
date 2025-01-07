@@ -8,7 +8,7 @@ rule Susp_PDFPhishing_Generic {
         $s2 = "/wp-content/plugins/formcraft/file-upload/server/content/files/"
 
     condition:
-        uint16(0) == 0x2550 and (1 of ($s*) or 2 of ($s*))
+        /* uint16(0) == 0x2550 and */ (1 of ($s*) or 2 of ($s*))
 }
 
 rule PDFPhishing_Generic_A {
