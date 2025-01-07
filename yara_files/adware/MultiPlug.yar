@@ -4,7 +4,7 @@ rule Adware_MultiPlug_A_con {
         author = "Kybero Labs"
 
     strings:
-        $s1 = "!@Install@!UTF-8!
+        $s1 = "!@Install@!UTF-8!"
         $s2 = "Title=\"Download\""
         $s3 = "Progress=\"no\""
         $s4 = "RunProgram=\"51caf10e4098c.exe /s\""
