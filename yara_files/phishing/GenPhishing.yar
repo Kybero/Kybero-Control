@@ -4,11 +4,11 @@ rule Susp_PDFPhishing_Generic {
         author = "Kybero Labs"
 
     strings:
-        $s1 = "/wp-content/plugins/super-forms/uploads/php/files/"
-        $s2 = "/wp-content/plugins/formcraft/file-upload/server/content/files/"
+        $s1 = "/wp-content/plugins/super-forms/uploads/php/files/" nocase
+        $s2 = "/wp-content/plugins/formcraft/file-upload/server/content/files/" nocase
 
     condition:
-        /* uint16(0) == 0x2550 and */ (1 of ($s*) or 2 of ($s*))
+        uint32(0) == 0x25504446 and 1 of ($s*)
 }
 
 rule PDFPhishing_Generic_A {
@@ -17,21 +17,21 @@ rule PDFPhishing_Generic_A {
         author = "Kybero Labs"
 
     strings:
-        $s1 = "/Author (Franklin Daw)"
-        $s2 = "/Creator (Softplicity)"
-        $s3 = "/Author (Kixafoji Yeyevifera)"
-        $s4 = "/Subject (Mukkala mukabula tamil song mp3 free download.       By Laila Alvarez            i Sean Gallup/Getty Images News/Getty Images    Sharing music you')"
-        $s5 = "/Author (Tuvude Fukojuru)"
-        $s6 = "/Subject (South point movies. Movies Theaters United States Nevada Las Vegas Century South Point 16 2 people preferred this theate)"
-        $s7 = "/Title (Soft aesthetic bio template)"
-        $s8 = "/Author (Yorepufi Tutoyale)"
-        $s9 = "/Title (Play word whomp unblocked)"
-        $s10 = "/Author (Nevoketejo Hovajihe)"
-        $s11 = "/Title (Warframe how to get archwing)"
-        $s12 = "/Author (Rotigiri Ruveyake)"
+        $s1 = "/Author (Franklin Daw)" nocase
+        $s2 = "/Creator (Softplicity)" nocase
+        $s3 = "/Author (Kixafoji Yeyevifera)" nocase
+        $s4 = "/Subject (Mukkala mukabula tamil song mp3 free download.       By Laila Alvarez            i Sean Gallup/Getty Images News/Getty Images    Sharing music you')" nocase
+        $s5 = "/Author (Tuvude Fukojuru)" nocase
+        $s6 = "/Subject (South point movies. Movies Theaters United States Nevada Las Vegas Century South Point 16 2 people preferred this theate)" nocase
+        $s7 = "/Title (Soft aesthetic bio template)" nocase
+        $s8 = "/Author (Yorepufi Tutoyale)" nocase
+        $s9 = "/Title (Play word whomp unblocked)" nocase
+        $s10 = "/Author (Nevoketejo Hovajihe)" nocase
+        $s11 = "/Title (Warframe how to get archwing)" nocase
+        $s12 = "/Author (Rotigiri Ruveyake)" nocase
 
     condition:
-        uint16(0) == 0x2550 and 2 of ($s*)
+        uint32(0) == 0x25504446 and 2 of ($s*)
 }
 
 rule PDFPhishing_Generic_B {
@@ -117,5 +117,5 @@ rule PDFPhishing_Generic_B {
         $s75 = "http://fullcolorspandoeken.nl/userfiles/file/"
 
     condition:
-        uint16(0) == 0x2550 and 1 of ($s*)
+        uint32(0) == 0x25504446 and 1 of ($s*)
 }
