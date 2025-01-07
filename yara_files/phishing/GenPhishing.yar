@@ -1,3 +1,16 @@
+rule Susp_PDFPhishing_Generic {
+    meta:
+        description = "Detects PDF phishing based on suspicious domain structure"
+        author = "Kybero Labs"
+
+    strings:
+        $s1 = "/wp-content/plugins/super-forms/uploads/php/files/"
+        $s2 = "/wp-content/plugins/formcraft/file-upload/server/content/files/"
+
+    condition:
+        uint16(0) == 0x2550 and 1 of ($s*)
+}
+
 rule PDFPhishing_Generic_A {
     meta:
         description = "Detects PDF phishing based on authors"
@@ -102,19 +115,6 @@ rule PDFPhishing_Generic_B {
         $s73 = "https://cremeconferences.com/wp-content/plugins/super-forms/uploads/php/files/"
         $s74 = "https://www.teppiche-waschen-hamburg.de/wp-content/plugins/formcraft/file-upload/server/content/files/"
         $s75 = "http://fullcolorspandoeken.nl/userfiles/file/"
-
-    condition:
-        uint16(0) == 0x2550 and 1 of ($s*)
-}
-
-rule Susp_PDFPhishing_Generic {
-    meta:
-        description = "Detects PDF phishing based on suspicious domain structure"
-        author = "Kybero Labs"
-
-    strings:
-        $s1 = "/wp-content/plugins/super-forms/uploads/php/files/"
-        $s2 = "/wp-content/plugins/formcraft/file-upload/server/content/files/"
 
     condition:
         uint16(0) == 0x2550 and 1 of ($s*)
