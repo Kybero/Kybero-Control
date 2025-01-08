@@ -8,7 +8,7 @@ rule Trojan_Agent_A_con {
         $s2 = "C:\\ping_pong\\win_client\\Release\\win_client.pdb"
 
     condition:
-        all of them
+        uint16(0) == 0x4d5a and all of them
 }
 
 rule Trojan_Agent_B_con {
@@ -20,7 +20,7 @@ rule Trojan_Agent_B_con {
         $s1 = "C:\\Users\\Ďŕâĺë\\Desktop\\test.pb"
 
     condition:
-        all of them
+        uint16(0) == 0x4d5a and all of them
 }
 
 
@@ -33,5 +33,5 @@ rule Trojan_Agent_C_con {
         $s1 = "M:\\src\\04F\\_SHW_CF_181213\\SWH_DLL_01\\HookDll\\Release\\HookDll.pdb"
 
     condition:
-        all of them
+        uint16(0) == 0x4d5a and all of them
 }
