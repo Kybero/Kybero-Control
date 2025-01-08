@@ -6,6 +6,7 @@ rule Susp_PDFPhishing_Generic {
     strings:
         $s1 = "/wp-content/plugins/super-forms/uploads/php/files/" nocase
         $s2 = "/wp-content/plugins/formcraft/file-upload/server/content/files/" nocase
+        $s3 = "/ckfinder/userfiles/files/" nocase
 
     condition:
         uint32(0) == 0x25504446 and 1 of ($s*)
