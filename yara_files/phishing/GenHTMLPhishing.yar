@@ -18,7 +18,7 @@ rule HTMLPhishing_Generic_A {
         author = "Kybero Labs"
 
     strings:
-        $doc = "doctype html" ascii nocase
+        $h = "doctype html" ascii nocase
 
         $s1 = "https://centrocomercialparana.com.ar/"
 
