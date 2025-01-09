@@ -18,10 +18,8 @@ rule HTMLPhishing_Generic_A {
         author = "Kybero Labs"
 
     strings:
-        $h = "doctype html" ascii nocase
-
         $s1 = "https://centrocomercialparana.com.ar/"
 
     condition:
-        $h and $s1
+        all of them
 }
