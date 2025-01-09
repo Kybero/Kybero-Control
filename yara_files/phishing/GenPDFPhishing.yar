@@ -4,12 +4,14 @@ rule Susp_PDFPhishing_Generic {
         author = "Kybero Labs"
 
     strings:
+        $p = "PDF-1"
+
         $s1 = "/wp-content/plugins/super-forms/uploads/php/files/"
         $s2 = "/wp-content/plugins/formcraft/file-upload/server/content/files/"
         $s3 = "/ckfinder/userfiles/files/"
 
     condition:
-        (for any i in (0..10): (uint32(i) == 0x25504446)) and 1 of ($s*)
+        $p and 1 of ($s*)
 }
 
 rule PDFPhishing_Generic_A {
@@ -18,6 +20,8 @@ rule PDFPhishing_Generic_A {
         author = "Kybero Labs"
 
     strings:
+        $p = "PDF-1"
+
         $s1 = "/Author (Franklin Daw)"
         $s2 = "/Creator (Softplicity)"
         $s3 = "/Author (Kixafoji Yeyevifera)"
@@ -32,7 +36,7 @@ rule PDFPhishing_Generic_A {
         $s12 = "/Author (Rotigiri Ruveyake)" 
 
     condition:
-        uint32(0) == 0x25504446 and 2 of ($s*)
+        $p and 2 of ($s*)
 }
 
 rule PDFPhishing_Generic_B {
@@ -41,6 +45,8 @@ rule PDFPhishing_Generic_B {
         author = "Kybero Labs"
 
     strings:
+        $p = "PDF-1"
+
         $s1 = "https://cdn-cms.f-static.net"
         $s2 = "http://arohitourandtravels.com/userfiles/file/"
         $s3 = "https://autosaloncenter.com/uploads/file/"
@@ -118,5 +124,5 @@ rule PDFPhishing_Generic_B {
         $s75 = "http://fullcolorspandoeken.nl/userfiles/file/"
 
     condition:
-        uint32(0) == 0x25504446 and 1 of ($s*)
+        $p and 1 of ($s*)
 }
