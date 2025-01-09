@@ -6,7 +6,7 @@ rule Susp_HTMLPhishing_Generic {
     strings:
         $h = "doctype html" ascii nocase
 
-        $a1 = /dataType:\s*'JSON',\s*url:\s*'.*?',\s*type:\s*'POST',\s*data:\s*\{\s*email:\s*email,\s*password:\s*password,\s*\}/
+        $a1 = $a1 = /dataType:\s*'JSON',\s*url:\s*'[^']*',\s*type:\s*'POST',\s*data:\s*\{\s*email:\s*email,\s*password:\s*password,\s*\}/
 
     condition:
         $h and $a1
