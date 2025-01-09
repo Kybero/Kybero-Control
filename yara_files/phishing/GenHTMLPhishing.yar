@@ -4,7 +4,7 @@ rule Susp_HTMLPhishing_Generic {
         author = "Kybero Labs"
 
     strings:
-        $doctype = "<!doctype html>" ascii nocase
+        $doctype = "!doctype html" ascii nocase
 
         $a1 = /dataType:\s*'JSON',\s*url:\s*'.*?',\s*type:\s*'POST',\s*data:\s*\{\s*email:\s*email,\s*password:\s*password,\s*\}/
 
@@ -18,7 +18,7 @@ rule HTMLPhishing_Generic_A {
         author = "Kybero Labs"
 
     strings:
-        $doctype = "<!doctype html>" ascii nocase
+        $doctype = "!doctype html" ascii nocase
 
         $s1 = "https://centrocomercialparana.com.ar/"
 
