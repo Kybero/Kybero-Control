@@ -11,15 +11,3 @@ rule Susp_HTMLPhishing_Generic {
     condition:
         $h and $a1
 }
-
-rule HTMLPhishing_Generic_A {
-    meta:
-        description = "Detects HTML phishing based on risky domain connections"
-        author = "Kybero Labs"
-
-    strings:
-        $s1 = "https://centrocomercialparana.com.ar/"
-
-    condition:
-        all of them
-}
