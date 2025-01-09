@@ -9,7 +9,7 @@ rule Susp_PDFPhishing_Generic {
         $s3 = "/ckfinder/userfiles/files/"
 
     condition:
-        uint32(0) == 0x25504446 and 1 of ($s*)
+        /* uint32(0) == 0x25504446 and */ 1 of ($s*)
 }
 
 rule PDFPhishing_Generic_A {
