@@ -8,5 +8,5 @@ rule Trojan_Generic_A {
         $s2 = "This program cannot be run in DOS mode"
 
     condition:
-        all of them
+        uint16(0) == 0x5a4d and all of them
 }
