@@ -9,5 +9,5 @@ rule Trojan_Mansabo_A_con {
         $s3 = "\\Program Files (x86)\\Microsoft Visual Studio\\VB98\\VB6.OLB"
 
     condition:
-        uint16(0) == 0x4d5a and all of them
+        uint16(0) == 0x5a4d and all of them
 }
