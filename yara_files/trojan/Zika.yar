@@ -10,5 +10,5 @@ rule Trojan_Zika_A_con {
         $s4 = "http://rpi.net.au/~ajohnson/resourcehacker"
 
     condition:
-        uint16(0) == 0x4d5a and all of them
+        uint16(0) == 0x5a4d and all of them
 }
