@@ -8,5 +8,5 @@ rule Trojan_MEMZ_A_con {
         $s2 = "Nyan Cat"
 
     condition:
-        uint16(0) == 0x4d5a and all of them
+        uint16(0) == 0x5a4d and all of them
 }
