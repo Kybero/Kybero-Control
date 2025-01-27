@@ -42,5 +42,5 @@ rule Ransom_Sodinokibi_B_con {
         $b = {0F B6 C2 03 C8 8B 45 14 0F B6 C9 8A 8C 0D FC FE FF FF 32 0C 07 88 08 40 89 45 14 8B 45 FC 83 EB 01 75 AA}
 
     condition:
-        all of them
+        $a and $b
 }
