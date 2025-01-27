@@ -2,7 +2,7 @@ import "pe"
 
 rule Ransom_Sodinokibi_A_con {
    meta:
-      description = "Using a recently disclosed vulnerability in Oracle WebLogic, criminals use it to install a new variant of ransomware called “Sodinokibi"
+      description = "Using a recently disclosed vulnerability in Oracle WebLogic, criminals use it to install a new variant of ransomware called Sodinokibi"
       author = "Christiaan Beek | McAfee ATR team"
       date = "2019-05-13"
       rule_version = "v1"
