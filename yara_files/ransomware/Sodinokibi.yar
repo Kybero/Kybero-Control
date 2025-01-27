@@ -23,7 +23,7 @@ rule Ransom_Sodinokibi_A_con {
       ( uint16(0) == 0x5a4d and 
       filesize < 900KB and 
       pe.imphash() == "672b84df309666b9d7d2bc8cc058e4c2" and  
-      ( all of them )
+      all of them )
 }
 
 rule Ransom_Sodinokibi_B_con {
