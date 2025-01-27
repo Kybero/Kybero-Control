@@ -11,7 +11,7 @@ rule Adware_InstallCore_A_con
 	strings:
 
 		//IOC patterns
-		$req0 = "* flD.ch^}{1?"
+		$req0 = "* flD.ch^\}\{1?"
 		$req1 = "005/WindowsSettings\">true</dpiAware>\r\n    </windowsSettings>\r\n</application>\r\n<compatibility xmlns=\"urn:schemas-microsoft-com:co"
 		$req2 = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0"
 		$req3 = "For more detailed information, please visit https://jrsoftware.org/ishelp/index.php?topic=setupcmdline"
