@@ -11,7 +11,6 @@ rule Adware_InstallCore_A_con
 	strings:
 
 		//IOC patterns
-		$req2 = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0"
 		$req3 = "For more detailed information, please visit https://jrsoftware.org/ishelp/index.php?topic=setupcmdline"
 		$req4 = "Software\\Borland\\Delphi\\Locales"
 		$req5 = "Software\\Borland\\Locales"
