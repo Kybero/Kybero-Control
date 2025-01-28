@@ -18,7 +18,7 @@ rule Trojan_JSIFrame_B_con {
 
     strings:
         $s1 = "(function () {    var phxa = document.createElement('iframe');    phxa.src ="
-        $s2 = "phxa.style.position = 'absolute';    phxa.style.border = '0';    phxa.style.height = '1px';    phxa.style.width = '1px';    phxa.style.left = '1px';    phxa.style.top = '1px';    if (!document.getElementById('phxa')) {        document.write('<div id=\'phxa\'></div>');        document.getElementById('phxa').appendChild(phxa);    }})();"
+        $s2 = "phxa.style.position = 'absolute';    phxa.style.border = '0';    phxa.style.height = '1px';    phxa.style.width = '1px';    phxa.style.left = '1px';    phxa.style.top = '1px';    if (!document.getElementById('phxa')) {        document.write('<div id=\\'phxa\\'></div>');        document.getElementById('phxa').appendChild(phxa);    }})();"
 
     condition:
         all of them
