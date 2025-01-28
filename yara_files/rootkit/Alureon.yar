@@ -175,3 +175,16 @@ rule Rootkit_Alureon_A_con {
     condition:
         7 of them and filesize < 278528
 }
+
+rule Rootkit_Alureon_B_con {
+    meta:
+        description = "Detects Alureon"
+        author = "Kybero Labs"
+
+    strings:
+        $s1 = {41 00 6c 00 6c 00 20 00 75 00 20 00 6e 00 65 00 65 00 64 00 20 00 69 00 73 00 20 00 6c 00 6f 00 76 00 65}
+        $s2 = {42 00 72 00 75 00 63 00 65 00 20 00 4c 00 65 00 65}
+
+    condition:
+        uint16(0) == 0x5a4d and all of them
+}
