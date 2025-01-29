@@ -1,3 +1,15 @@
+rule Suspicious_Trojan_JSIFrame {
+    meta:
+        description = "Detects invisible IFrame instances - possibly malicious"
+        author = "Kybero Labs"
+
+    strings:
+        $s = "width=0 height=0></iframe>"
+
+    condition:
+        $s
+}
+
 rule Trojan_JSIFrame_A_con {
     meta:
         description = "Detects malicious IFrame instances hidden in JavaScript code"
