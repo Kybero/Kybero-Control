@@ -9,5 +9,18 @@ rule Adware_Gamevance_A_con {
         $s3 = "EpicPlay Games Extension"
 
     condition:
-        all of them
+        uint16(0) == 0x5a4d and all of them
+}
+
+rule Adware_Gamevance_B_con {
+    meta:
+        description = "Detects Gamevance based on known RivalGaming domain"
+        author = "Kybero Labs"
+
+    strings:
+        $s1 = "http://pages.rivalgaming.com"
+        $s2 = "RivalGaming"
+
+    condition:
+        uint16(0) == 0x5a4d and all of them
 }
