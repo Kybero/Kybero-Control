@@ -172,3 +172,15 @@ rule Adware_InstallCore_A_con
 		//require 50% of optional strings
 		uint16(0) == 0x5A4D and filesize > 26932587 and filesize < 32917605 and all of ($req*) and 74 of ($opt*)
 }
+
+rule Adware_InstallCore_B_con {
+	meta:
+		description = "Detects InstallCore certificate"
+		author = "Kybero Labs"
+
+	strings:
+		$s = "Click run software"
+
+	condition:
+		uint16(0) == 0x5a4d and $s
+}
