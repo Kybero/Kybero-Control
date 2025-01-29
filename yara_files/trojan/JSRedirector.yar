@@ -15,11 +15,7 @@ rule Trojan_JSRedirector_A_con {
 rule Trojan_JSRedirector_B_con {
     meta:
         description = "Detects obfuscated JavaScript redirector"
-        author = "Kybero Antivirus"
-        version = "1.3"
-        date = "2025-01-29"
-        category = "malware"
-        severity = "high"
+        author = "Kybero Labs"
 
     strings:
         $obf_function = /function\s+[a-zA-Z0-9_]{3,8}\(.*\)\{var\s+[a-zA-Z0-9_]{3,8},[a-zA-Z0-9_]{3,8},[a-zA-Z0-9_]{3,8},[a-zA-Z0-9_]{3,8}/ nocase
@@ -31,4 +27,17 @@ rule Trojan_JSRedirector_B_con {
         (
             $obf_function and $obf_eval and ($iframe_inject or $small_iframe)
         )
+}
+
+rule Trojan_JSRedirector_C_con {
+    meta:
+        description = "Detects JavaScript code loading scripts from a known malicious domain"
+        author = "Kybero Labs"
+
+    strings:
+        $s1 = "<script src="http://"
+        $s2 = ".rr.nu/"
+
+    condition:
+        all of them
 }
