@@ -35,3 +35,15 @@ rule Trojan_JSIFrame_B_con {
     condition:
         all of them
 }
+
+rule Trojan_JSIFrame_C_con {
+    meta:
+        description = "Detects malicious IFrame instances hidden in JavaScript code"
+        author = "Kybero Labs"
+
+    strings:
+        $s = "[\"split\"](\"a!\".substr(1));for(i=6-2-1-2-1;i!=613;i++){j=i;if(st)ss=ss+st[f](-h*(1+1*n[j]));}if(zz)q=ss;if(t)e(\"\"+q);</script>"
+
+    condition:
+        $s
+}
