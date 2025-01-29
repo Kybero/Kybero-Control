@@ -35,7 +35,7 @@ rule Trojan_JSRedirector_C_con {
         author = "Kybero Labs"
 
     strings:
-        $s1 = "<script src="http://"
+        $s1 = "<script src=\"http://"
         $s2 = ".rr.nu/"
 
     condition:
