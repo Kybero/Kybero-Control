@@ -1,5 +1,6 @@
 rule Adware_Gamevance_A_con {
     meta:
+        threat_name = "Adware/Gamevance.A!con"
         description = "Detects Gamevance based on known EpicPlay domain"
         author = "Kybero Labs"
 
@@ -14,6 +15,7 @@ rule Adware_Gamevance_A_con {
 
 rule Adware_Gamevance_B_con {
     meta:
+        threat_name = "Adware/Gamevance.B!con"
         description = "Detects Gamevance based on known RivalGaming domain"
         author = "Kybero Labs"
 
