@@ -41,3 +41,15 @@ rule Trojan_JSRedirector_C_con {
     condition:
         all of them
 }
+
+rule Trojan_JSRedirector_D_con {
+    meta:
+        description = "Detects generic JavaScript redirector"
+        author = "Kybero Labs"
+
+    strings:
+        $s1 = "<script language='javascript'>document.write(unescape("
+
+    condition:
+        all of them
+}
