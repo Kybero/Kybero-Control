@@ -1,5 +1,6 @@
 rule Adware_Solimba_A_con {
     meta:
+        threat_name = "Adware/Solimba.A!con"
         description = "Detects Solimba certificate"
         author = "Kybero Labs"
 
