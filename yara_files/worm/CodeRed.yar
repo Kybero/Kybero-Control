@@ -1,5 +1,6 @@
 rule Worm_CodeRed_A_con {
     meta:
+        threat_name = "Worm/CodeRed.A!con"
         description = "Detects CodeRed"
         author = "Kybero Labs"
 
