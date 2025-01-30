@@ -1,5 +1,6 @@
 rule RAT_AsyncRAT_A_con {
    meta:
+      threat_name = "RAT/AsyncRAT.A!con"
       description = "AsyncRAT v0.5.7B - Remote Administration Tool, became popular across hackforums members"
       author = "IrishIRL"
       reference = "https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp"
@@ -39,6 +40,7 @@ rule RAT_AsyncRAT_A_con {
 
 rule RAT_AsyncRAT_B_con {
     meta:
+        threat_name = "RAT/AsyncRAT.A!con"
         description = "detect AsyncRat in memory"
         author = "JPCERT/CC Incident Response Group"
         rule_usage = "memory scan"
