@@ -1,5 +1,6 @@
 rule JPG_HiddenJS_A_con {
     meta:
+        threat_name = "JPG/HiddenJS.A!con"
         description = "Detects JavaScript code hidden within JPG format images"
         author = "Kybero Labs"
 
