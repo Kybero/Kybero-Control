@@ -1,9 +1,9 @@
 rule Backdoor_EagerBee_A_con {
     meta:
+        threat_name = "Backdoor/EagerBee.A!con"
         author = "Elastic Security"
         creation_date = "2023-09-04"
         last_modified = "2023-09-20"
-        threat_name = "Windows.Trojan.EagerBee"
         reference_sample = "339e4fdbccb65b0b06a1421c719300a8da844789a2016d58e8ce4227cb5dc91b"
         license = "Elastic License v2"
         os = "windows"
