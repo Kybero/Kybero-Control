@@ -1,5 +1,6 @@
 rule Adware_Trymedia_A_con {
     meta:
+        threat_name = "Adware/Trymedia.A!con"
         description = "Detects Trymedia"
         author = "Kybero Labs"
 
