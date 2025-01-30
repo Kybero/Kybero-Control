@@ -1,5 +1,6 @@
 rule Adware_DirectDownloader_A_con {
     meta:
+        threat_name = "Adware/DirectDownloader.A!con"
         description = "Detects DirectDownloader"
         author = "Kybero Labs"
 
