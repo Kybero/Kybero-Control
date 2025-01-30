@@ -1,5 +1,6 @@
 rule Adware_Generic_A {
     meta:
+        threat_name = "Adware/Generic.A"
         description = "Detects files attempting to change browser homepages"
         author = "Kybero Labs"
 
@@ -14,6 +15,7 @@ rule Adware_Generic_A {
 
 rule Adware_Generic_B {
     meta:
+        threat_name = "Adware/Generic.B"
         description = "Detects files attempting to change default browser search providers"
         author = "Kybero Labs"
 
