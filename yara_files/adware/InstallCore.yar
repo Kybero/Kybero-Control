@@ -1,6 +1,6 @@
-rule Adware_InstallCore_A_con
-{
+rule Adware_InstallCore_A_con {
 	meta:
+ 	        threat_name = "Adware/InstallCore.A!con"
 		author = "FileScan.IO Engine v1.1.0-d133568"
 		date = "2024-05-14"
 		sample = "93bc218fa7956dc4eb8d19f7fe8c8ebb2e0b60f06ff221bbab6e62b56fc94f6a"
@@ -9,7 +9,6 @@ rule Adware_InstallCore_A_con
 		isWeakRule = false
 
 	strings:
-
 		//IOC patterns
 		$req3 = "For more detailed information, please visit https://jrsoftware.org/ishelp/index.php?topic=setupcmdline"
 		$req4 = "Software\\Borland\\Delphi\\Locales"
@@ -175,6 +174,7 @@ rule Adware_InstallCore_A_con
 
 rule Adware_InstallCore_B_con {
 	meta:
+        	threat_name = "Adware/InstallCore.B!con"
 		description = "Detects InstallCore certificate"
 		author = "Kybero Labs"
 
