@@ -1,5 +1,6 @@
 rule Worm_Melissa_A_con {
     meta:
+        threat_name = "Worm/Melissa.A!con"
         description = "Detects Melissa"
         author = "Kybero Labs"
 
