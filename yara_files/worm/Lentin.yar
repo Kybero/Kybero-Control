@@ -1,5 +1,6 @@
 rule Worm_Lentin_A_con {
     meta:
+        threat_name = "Worm/Lentin.A!con"
         description = "Detects Lentin/Yaha"
         author = "Kybero Labs"
 
@@ -13,6 +14,7 @@ rule Worm_Lentin_A_con {
 
 rule Worm_Lentin_B_con {
     meta:
+        threat_name = "Worm/Lentin.B!con"
         description = "Detects the signed variant of Lentin/Yaha"
         author = "Kybero Labs"
 
