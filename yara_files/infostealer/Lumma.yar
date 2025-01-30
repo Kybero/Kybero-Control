@@ -1,11 +1,12 @@
-rule InfoStealer_Lumma_A_con {
-	meta:
-		description = "detect_Lumma_stealer"
-		author = "@malgamy12"
-		date = "2022-11-3"
-		license = "DRL 1.1"
-		hunting = "https://www.hybrid-analysis.com/sample/f18d0cd673fd0bd3b071987b53b5f97391a56f6e4f0c309a6c1cee6160f671c0"
-		hash1 = "19b937654065f5ee8baee95026f6ea7466ee2322"
+rule Infostealer_Lumma_A_con {
+    meta:
+        threat_name = "Infostealer/Lumma.A!con"
+	description = "detect_Lumma_stealer"
+	author = "@malgamy12"
+	date = "2022-11-3"
+	license = "DRL 1.1"
+	hunting = "https://www.hybrid-analysis.com/sample/f18d0cd673fd0bd3b071987b53b5f97391a56f6e4f0c309a6c1cee6160f671c0"
+	hash1 = "19b937654065f5ee8baee95026f6ea7466ee2322"
         hash2 = "987f93e6fa93c0daa0ef2cf4a781ca53a02b65fe"
         hash3 = "70517a53551269d68b969a9328842cea2e1f975c"
         hash4 = "9b7b72c653d07a611ce49457c73ee56ed4c4756e"
