@@ -1,5 +1,6 @@
 rule Hacktool_TacticalRMM_A_con {
     meta:
+        threat_name = "Hacktool/TacticalRMM.A!con"
         id = "c4a0ba33-b458-4c2a-abfa-4c33481d6491"
         version = "1.0"
         description = "Detects TacticalRMM installer"
