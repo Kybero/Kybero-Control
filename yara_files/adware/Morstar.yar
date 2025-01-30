@@ -1,6 +1,7 @@
 rule Adware_Morstar_A_con {
     meta:
-        description = "Detects Firseria"
+        threat_name = "Adware/Morstar.A!con"
+        description = "Detects Morstar"
         author = "Kybero Labs"
 
     strings:
