@@ -1,5 +1,6 @@
 rule Adware_1ClickDownload_A_con {
     meta:
+        threat_name = "Adware/1ClickDownload.A!con"
         description = "Detects 1ClickDownload certificate"
         author = "Kybero Labs"
 
