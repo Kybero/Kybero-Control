@@ -1,5 +1,6 @@
 rule Adware_DomaIQ_A_con {
     meta:
+        threat_name = "Adware/DomaIQ.A!con"
         description = "Detects DomaIQ"
         author = "Kybero Labs"
 
@@ -14,6 +15,7 @@ rule Adware_DomaIQ_A_con {
 
 rule Adware_DomaIQ_B_con {
     meta:
+        threat_name = "Adware/DomaIQ.B!con"
         description = "Detects DomaIQ"
         author = "Kybero Labs"
 
@@ -28,6 +30,7 @@ rule Adware_DomaIQ_B_con {
 
 rule Adware_DomaIQ_C_con {
     meta:
+        threat_name = "Adware/DomaIQ.C!con"
         description = "Detects DomaIQ"
         author = "Kybero Labs"
     strings:
@@ -40,6 +43,7 @@ rule Adware_DomaIQ_C_con {
 
 rule Adware_DomaIQ_D_con {
     meta:
+        threat_name = "Adware/DomaIQ.D!con"
         author              = "ReversingLabs"
         source              = "ReversingLabs"
         status              = "RELEASED"
