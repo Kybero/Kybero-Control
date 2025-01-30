@@ -1,6 +1,7 @@
 rule Botnet_Mirai_A_con {
 
     meta:
+        threat_name = "Botnet/Mirai.A!con"
         author = "Felix Bilstein - yara-signator at cocacoding dot com"
         date = "2024-10-31"
         version = "1"
