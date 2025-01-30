@@ -1,17 +1,6 @@
-rule Suspicious_Trojan_JSIFrame {
-    meta:
-        description = "Detects invisible IFrame instances - possibly malicious"
-        author = "Kybero Labs"
-
-    strings:
-        $s = "width=0 height=0></iframe>"
-
-    condition:
-        $s
-}
-
 rule Trojan_JSIFrame_A_con {
     meta:
+        threat_name = "Trojan/JSIFrame.A!con"
         description = "Detects malicious IFrame instances hidden in JavaScript code"
         author = "Kybero Labs"
 
@@ -25,6 +14,7 @@ rule Trojan_JSIFrame_A_con {
 
 rule Trojan_JSIFrame_B_con {
     meta:
+        threat_name = "Trojan/JSIFrame.B!con"
         description = "Detects malicious IFrame instances hidden in JavaScript code"
         author = "Kybero Labs"
 
@@ -38,6 +28,7 @@ rule Trojan_JSIFrame_B_con {
 
 rule Trojan_JSIFrame_C_con {
     meta:
+        threat_name = "Trojan/JSIFrame.C!con"
         description = "Detects malicious IFrame instances hidden in JavaScript code"
         author = "Kybero Labs"
 
@@ -50,6 +41,7 @@ rule Trojan_JSIFrame_C_con {
 
 rule Trojan_JSIFrame_D_con {
     meta:
+        threat_name = "Trojan/JSIFrame.D!con"
         description = "Detects malicious IFrame instances hidden in JavaScript code"
         author = "Kybero Labs"
 
@@ -62,11 +54,25 @@ rule Trojan_JSIFrame_D_con {
 
 rule Trojan_JSIFrame_E_con {
     meta:
+        threat_name = "Trojan/JSIFrame.E!con"
         description = "Detects malicious IFrame instances hidden in JavaScript code"
         author = "Kybero Labs"
 
     strings:
         $s = "</html><script type=\"text/javascript\">eval(String.fromCharCode("
+
+    condition:
+        $s
+}
+
+rule Trojan_JSIFrame_F_con {
+    meta:
+        threat_name = "Trojan/JSIFrame.F!con"
+        description = "Detects invisible IFrame instances - possibly malicious"
+        author = "Kybero Labs"
+
+    strings:
+        $s = "width=0 height=0></iframe>"
 
     condition:
         $s
