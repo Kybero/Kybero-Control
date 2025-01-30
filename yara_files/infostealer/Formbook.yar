@@ -1,5 +1,6 @@
-rule InfoStealer_Formbook_A_con {
+rule Infostealer_Formbook_A_con {
     meta:
+        threat_name = "Infostealer/Formbook.A!con"
         author = "@malgamy12"
         date = "2022-11-8"
 	    license = "DRL 1.1"
