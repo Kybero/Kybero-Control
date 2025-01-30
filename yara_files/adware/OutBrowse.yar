@@ -1,5 +1,6 @@
 rule Adware_OutBrowse_A_con {
     meta:
+        threat_name = "Adware/OutBrowse.A!con"
         description = "Detects OutBrowse"
         author = "Kybero Labs"
 
@@ -14,6 +15,7 @@ rule Adware_OutBrowse_A_con {
 
 rule Adware_OutBrowse_B_con {
     meta:
+        threat_name = "Adware/OutBrowse.B!con"
         description = "Detects OutBrowse"
         author = "Kybero Labs"
 
@@ -28,6 +30,7 @@ rule Adware_OutBrowse_B_con {
 
 rule Adware_OutBrowse_C_con {
     meta:
+        threat_name = "Adware/OutBrowse.C!con"
         description = "Detects OutBrowse"
         author = "Kybero Labs"
 
