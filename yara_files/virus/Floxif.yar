@@ -1,5 +1,6 @@
 rule Virus_Floxif_A_con {
    meta:
+      threat_name = "Virus/Floxif.A!con"
       description = "Malware - Floxif"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
