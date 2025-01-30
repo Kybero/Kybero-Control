@@ -1,5 +1,6 @@
-rule Adware_Gamevance_A_con {
+rule Adware_Firseria_A_con {
     meta:
+        threat_name = "Adware/Firseria.A!con"
         description = "Detects Firseria based on certificate (prone to false positives)"
         author = "Kybero Labs"
 
