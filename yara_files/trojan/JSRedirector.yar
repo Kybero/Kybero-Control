@@ -1,5 +1,6 @@
 rule Trojan_JSRedirector_A_con {
     meta:
+        threat_name = "Trojan/JSRedirector.A!con"
         description = "Detects JavaScript code creating functions to redirect links onto a malicious site"
         author = "Kybero Labs"
 
@@ -14,6 +15,7 @@ rule Trojan_JSRedirector_A_con {
 
 rule Trojan_JSRedirector_B_con {
     meta:
+        threat_name = "Trojan/JSRedirector.B!con"
         description = "Detects obfuscated JavaScript redirector"
         author = "Kybero Labs"
 
@@ -31,6 +33,7 @@ rule Trojan_JSRedirector_B_con {
 
 rule Trojan_JSRedirector_C_con {
     meta:
+        threat_name = "Trojan/JSRedirector.C!con"
         description = "Detects JavaScript code loading scripts from a known malicious domain"
         author = "Kybero Labs"
 
@@ -44,6 +47,7 @@ rule Trojan_JSRedirector_C_con {
 
 rule Trojan_JSRedirector_D_con {
     meta:
+        threat_name = "Trojan/JSRedirector.D!con"
         description = "Detects generic JavaScript redirector"
         author = "Kybero Labs"
 
