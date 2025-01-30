@@ -1,5 +1,6 @@
 rule EICARTestFile_A_con {
     meta:
+        threat_name = "EICARTestFile.A!con"
         description = "EICAR test file string (full)"
         author = "Kybero Labs"
 
@@ -14,6 +15,7 @@ rule EICARTestFile_A_con {
 
 rule EICARTestFile_B_con {
     meta:
+        threat_name = "EICARTestFile.B!con"
         description = "EICAR test file string (shortened)"
         author = "Kybero Labs"
 
