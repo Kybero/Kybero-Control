@@ -1,5 +1,6 @@
-rule Susp_HTMLPhishing_Generic {
+rule HTMLPhishing_Generic_A {
     meta:
+        threat_name = "HTMLPhishing/Generic.A"
         description = "Detects HTML phishing based on suspicious commands"
         author = "Kybero Labs"
 
