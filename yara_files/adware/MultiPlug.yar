@@ -1,5 +1,6 @@
 rule Adware_MultiPlug_A_con {
     meta:
+        threat_name = "Adware/MultiPlug.A!con"
         description = "Detects MultiPlug"
         author = "Kybero Labs"
 
@@ -11,11 +12,12 @@ rule Adware_MultiPlug_A_con {
         $s5 = ";!@InstallEnd@!"
 
     condition:
-        uint16(0) == 0x4d5a and all of them
+        uint16(0) == 0x5d4a and all of them
 }
 
 rule Adware_MultiPlug_B_con {
     meta:
+        threat_name = "Adware/MultiPlug.B!con"
         description = "Detects MultiPlug"
         author = "Kybero Labs"
 
@@ -27,5 +29,5 @@ rule Adware_MultiPlug_B_con {
         $s5 = ";!@InstallEnd@!"
 
     condition:
-        uint16(0) == 0x4d5a and all of them
+        uint16(0) == 0x5d4a and all of them
 }
