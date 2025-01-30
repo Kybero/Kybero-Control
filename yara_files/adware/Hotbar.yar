@@ -1,5 +1,6 @@
 rule Adware_Hotbar_A_con {
     meta:
+        threat_name = "Adware/Hotbar.A!con"
         description = "Detects Hotbar certificate"
         author = "Kybero Labs"
 
