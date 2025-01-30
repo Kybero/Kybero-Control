@@ -1,15 +1,16 @@
 rule RAT_Remcos_A_con {
-	meta:
+  	meta:
+      		threat_name = "RAT/Remcos.A!con"
 		author = "Matthew @ Embee_Research"
 		created = "2023/08/27"
 		description = "Detects strings present in remcos rat Samples."
 		sha_256 = "ec901217558e77f2f449031a6a1190b1e99b30fa1bb8d8dabc3a99bc69833784"
 		source = "https://github.com/embee-research/Yara-detection-rules/blob/main/Rules/win_remcos_rat_unpacked.yar"
-        malpedia_reference = "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos"
-        malpedia_rule_date = "20230906"
-        malpedia_hash = ""
-        malpedia_version = "20230906"
-        malpedia_sharing = "TLP:WHITE"
+	        malpedia_reference = "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos"
+	        malpedia_rule_date = "20230906"
+	        malpedia_hash = ""
+	        malpedia_version = "20230906"
+	        malpedia_sharing = "TLP:WHITE"
 		
 	strings:
 		$r0 = " ______                              " ascii
