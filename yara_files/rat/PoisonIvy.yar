@@ -1,5 +1,6 @@
 rule RAT_PoisonIvy_A_con {
 	meta:
+        	threat_name = "RAT/PoisonIvy.A!con"
 		description = "Detects a PoisonIvy APT malware group"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
@@ -22,6 +23,7 @@ rule RAT_PoisonIvy_A_con {
 
 rule RAT_PoisonIvy_B_con {
 	meta:
+        	threat_name = "RAT/PoisonIvy.B!con"
 		description = "Detects a PoisonIvy Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
@@ -58,6 +60,7 @@ rule RAT_PoisonIvy_B_con {
 
 rule RAT_PoisonIvy_C_con {
 	meta:
+        	threat_name = "RAT/PoisonIvy.C!con"
 		description = "Detects a PoisonIvy Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
@@ -77,6 +80,7 @@ rule RAT_PoisonIvy_C_con {
 
 rule RAT_PoisonIvy_D_con {
 	meta:
+        	threat_name = "RAT/PoisonIvy.D!con"
 		description = "Detects a PoisonIvy Sample APT"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
@@ -101,6 +105,7 @@ rule RAT_PoisonIvy_D_con {
 
 rule RAT_PoisonIvy_E_con {
 	meta:
+        	threat_name = "RAT/PoisonIvy.E!con"
 		description = "Detects PoisonIvy RAT sample set"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
@@ -124,6 +129,7 @@ condition:
 
 rule RAT_PoisonIvy_F_con {
 	meta:
+        	threat_name = "RAT/PoisonIvy.F!con"
 		description = "Detects PoisonIvy RAT sample set"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
@@ -164,6 +170,7 @@ rule RAT_PoisonIvy_F_con {
 
 rule RAT_PoisonIvy_G_con {
 	meta:
+        	threat_name = "RAT/PoisonIvy.G!con"
 		description = "Detects PoisonIvy RAT sample set"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
@@ -185,6 +192,7 @@ rule RAT_PoisonIvy_G_con {
 
 rule RAT_PoisonIvy_H_con {
 	meta:
+        	threat_name = "RAT/PoisonIvy.H!con"
 		description = "Detects PoisonIvy RAT DLL mentioned in Palo Alto Blog in April 2016"
 		author = "Florian Roth (Nextron Systems) (with the help of yarGen and Binarly)"
 		reference = "http://goo.gl/WiwtYT"
@@ -221,6 +229,7 @@ rule RAT_PoisonIvy_H_con {
 
 rule RAT_PoisonIvy_I_con {
 	meta:
+        	threat_name = "RAT/PoisonIvy.I!con"
 		description = "PoisonIvy RAT Generic Rule"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
