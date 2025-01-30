@@ -1,5 +1,6 @@
 rule Worm_Stuxnet_A_con {
     meta:
+        threat_name = "Worm/Stuxnet.A!con"
         author = "JAG-S (turla@chronicle.security)"
         hash = "c1961e54d60e34bbec397c9120564e8d08f2f243ae349d2fb20f736510716579"
         description = "Stuxshop standalone sample configuration"
@@ -26,6 +27,7 @@ rule Worm_Stuxnet_A_con {
 
 rule Worm_Stuxnet_B_con {
     meta:
+        threat_name = "Worm/Stuxnet.B!con"
         author = "Silas Cutler (havex@Chronicle.Security)"
         desc = "Identifies the OS Check function in STUXSHOP and CheshireCat"
         hash = "c1961e54d60e34bbec397c9120564e8d08f2f243ae349d2fb20f736510716579"
