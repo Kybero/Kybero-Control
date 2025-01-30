@@ -1,5 +1,6 @@
-rule GIF_Suspicious_A {
+rule GIF_GenericAnomaly_A {
    meta:
+      threat_name = "GIF/GenericAnomaly.A"
       description = "Detects files with GIF headers and format anomalies - which means that this image could be an obfuscated file of a different type"
       author = "Florian Roth (Nextron Systems)"
       score = 60
