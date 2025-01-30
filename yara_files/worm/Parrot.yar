@@ -1,5 +1,6 @@
 rule Worm_Parrot_A_con {
     meta:
+        threat_name = "Worm/Parrot.A!con"
         description = "Detects Parrot"
         author = "Kybero Labs"
 
