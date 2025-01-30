@@ -1,5 +1,6 @@
 rule Adware_Toggle_A_con {
     meta:
+        threat_name = "Adware/Toggle.A!con"
         description = "Detects Toggle"
         author = "Kybero Labs"
 
