@@ -1,5 +1,6 @@
 rule Backdoor_Tofsee_A_con {
     meta:
+        threat_name = "Backdoor/Tofsee.A!con"
         author="akrasuski1"
         malpedia_reference = "https://malpedia.caad.fkie.fraunhofer.de/details/win.tofsee"
         malpedia_version = "20171121"
