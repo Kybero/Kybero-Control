@@ -59,3 +59,15 @@ rule Trojan_JSIFrame_D_con {
     condition:
         $s
 }
+
+rule Trojan_JSIFrame_E_con {
+    meta:
+        description = "Detects malicious IFrame instances hidden in JavaScript code"
+        author = "Kybero Labs"
+
+    strings:
+        $s = "</html><script type=\"text/javascript\">eval(String.fromCharCode("
+
+    condition:
+        $s
+}
