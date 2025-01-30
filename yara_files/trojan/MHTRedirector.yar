@@ -1,5 +1,6 @@
 rule Trojan_MHTRedirector_A_con {
     meta:
+        threat_name = "Trojan/MHTRedirector.A!con"
         description = "Detects HTML code attempting to hijack browsers"
         author = "Kybero Labs"
 
