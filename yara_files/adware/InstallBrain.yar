@@ -1,5 +1,6 @@
 rule Adware_InstallBrain_A_con {
     meta:
+        threat_name = "Adware/InstallBrain.A!con"
         description = "Detects InstallBrain based on certificate"
         author = "Kybero Labs"
 
@@ -16,6 +17,7 @@ rule Adware_InstallBrain_A_con {
 
 rule Adware_InstallBrain_B_con {
     meta:
+        threat_name = "Adware/InstallBrain.B!con"
         description = "Detects InstallBrain based on certificate"
         author = "Kybero Labs"
 
