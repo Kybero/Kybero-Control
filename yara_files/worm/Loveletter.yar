@@ -1,5 +1,6 @@
 rule Worm_Loveletter_A_con {
     meta:
+        threat_name = "Worm/Loveletter.A!con"
         description = "Detects Loveletter"
         author = "Kybero Labs"
 
