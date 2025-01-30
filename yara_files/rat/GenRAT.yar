@@ -1,8 +1,8 @@
 import "pe"
 
-rule RAT_Generic_A
-{
+rule RAT_Generic_A {
    meta:
+        threat_name = "RAT/Generic.A"
         author = "Lucas Acha (http://www.lukeacha.com)"
         description = "Generic Detection for multiple RAT families, PUPs, Packers and suspicious executables"
   strings:
