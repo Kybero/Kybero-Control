@@ -1,5 +1,6 @@
 rule BAT_Bomb_A_con {
     meta:
+        threat_name = "BAT/Bomb.A!con"
         description = "Detects batch files with self-replication behavior"
         author = "Kybero Labs"
 
