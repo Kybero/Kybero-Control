@@ -1,5 +1,6 @@
 rule RAT_Quasar_A_con {
    meta:
+      threat_name = "RAT/Quasar.A!con"
       description = "Detects Quasar RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -25,6 +26,7 @@ rule RAT_Quasar_A_con {
 
 rule RAT_Quasar_B_con {
    meta:
+      threat_name = "RAT/Quasar.B!con"
       description = "Detects Quasar RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -51,6 +53,7 @@ rule RAT_Quasar_B_con {
 
 rule RAT_Quasar_C_con {
    meta:
+      threat_name = "RAT/Quasar.C!con"
       description = "Detects QuasarRAT malware"
       author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.ensilo.com/uncovering-new-activity-by-apt10"
