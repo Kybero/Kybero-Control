@@ -1,6 +1,6 @@
 rule Worm_Conficker_A_con {
-
     meta:
+        threat_name = "Worm/Conficker.A!con"
         author = "Felix Bilstein - yara-signator at cocacoding dot com"
         date = "2024-10-31"
         version = "1"
