@@ -1,8 +1,8 @@
 import "pe"
 
-rule RAT_PlugX_A_con
-{
+rule RAT_PlugX_A_con {
     meta:
+        threat_name = "RAT/PlugX.A!con"
         description = "PlugX Identifying Strings"
         author = "Seth Hardy"
         last_modified = "2014-06-12"
@@ -18,9 +18,9 @@ rule RAT_PlugX_A_con
         $BootLDR or ($Dwork and ($Plug25 or $Plug30 or $Shell6))
 }
 
-rule RAT_PlugX_B_con
-{
+rule RAT_PlugX_B_con {
 	meta:
+        	threat_name = "RAT/PlugX.B!con"
 		author = "Jean-Philippe Teissier / @Jipe_"
 		description = "PlugX RAT"
 		date = "2014-05-13"
@@ -41,9 +41,9 @@ rule RAT_PlugX_B_con
 		$v1a at 0 or $v1b or (($v2a or $v2b) and (($v1algoa and $v1algob) or $v2k))
 }
 
-rule RAT_PlugX_C_con
-{ 
+rule RAT_PlugX_C_con { 
 	meta:
+        	threat_name = "RAT/PlugX.C!con"
 		maltype = "plugX"
 		author = "https://github.com/reed1713"
 		reference = "http://www.fireeye.com/blog/technical/targeted-attack/2014/02/operation-greedywonk-multiple-economic-and-foreign-policy-sites-compromised-serving-up-flash-zero-day-exploit.html"
@@ -66,6 +66,7 @@ rule RAT_PlugX_C_con
         
 rule RAT_PlugX_D_con {
     meta:
+        threat_name = "RAT/PlugX.D!con"
         id = "2296ac6e-63f5-4cff-aeb7-2c5205e6f559"
         version = "1.0"
         description = "Detects MustangPanda malicious DLL"
