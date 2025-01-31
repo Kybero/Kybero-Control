@@ -384,7 +384,7 @@ rule Trojan_Generic_R {
 
 rule Trojan_Generic_S {
     meta:
-        threat_name = "Trojan/Generic.S
+        threat_name = "Trojan/Generic.S"
         author = "ditekSHen"
         description = "Detects executables referencing many IR and analysis tools"
     strings:
