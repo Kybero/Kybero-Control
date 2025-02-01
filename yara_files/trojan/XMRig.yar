@@ -1,5 +1,6 @@
 rule Trojan_XMRig_A_con {
    meta:
+      threat_name = "Trojan/XMRig.A!con"
       description = "Detects Monero mining software"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -24,6 +25,7 @@ rule Trojan_XMRig_A_con {
 
 rule Trojan_XMRig_B_con {
    meta:
+      threat_name = "Trojan/XMRig.B!con"
       description = "Auto-generated rule - from files config.json, config.json"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -40,8 +42,9 @@ rule Trojan_XMRig_B_con {
       ( uint16(0) == 0x0a7b or uint16(0) == 0x0d7b ) and filesize < 5KB and 1 of them
 }
 
-rule PUA_LNX_XMRIG_CryptoMiner {
+rule Trojan_XMRig_C_con {
    meta:
+      threat_name = "Trojan/XMRig.C!con"
       description = "Detects XMRIG CryptoMiner software"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -59,8 +62,9 @@ rule PUA_LNX_XMRIG_CryptoMiner {
       uint16(0) == 0x457f and filesize < 8000KB and ( 1 of ($x*) or 2 of them )
 }
 
-rule Trojan_XMRig_C_con {
+rule Trojan_XMRig_D_con {
    meta:
+      threat_name = "Trojan/XMRig.D!con"
       description = "Detects a suspicious XMRIG crypto miner executable string in filr"
       author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
