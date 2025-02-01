@@ -3,7 +3,7 @@ import "pe"
 rule Ransom_Conti_A_con {
    
    meta:
-
+      threat_name = "Ransom/Conti.A!con"
       description = "Conti ransomware is havnig capability too scan and encrypt oover the network"
       author = "McAfee ATR team"
       reference = "https://www.carbonblack.com/blog/tau-threat-discovery-conti-ransomware/"
