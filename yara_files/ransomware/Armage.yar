@@ -1,5 +1,6 @@
 rule Ransom_Armage_A_con {
     meta:
+        threat_name = "Ransom/Armage.A!con"
         author              = "ReversingLabs"
         source              = "ReversingLabs"
         status              = "RELEASED"
