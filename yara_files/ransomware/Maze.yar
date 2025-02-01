@@ -1,5 +1,6 @@
 rule Ransom_Maze_A_con {
    meta:
+      threat_name = "Ransom/Maze.A!con"
       description = "Detecting MAZE Ransomware"
       author = "McAfee ATR"
       date = "2020-04-19"
