@@ -1,5 +1,6 @@
 rule Trojan_CtxHack_A_con {
    meta:
+      threat_name = "Trojan/CtxHack.A!con"
       description = "Detects backdoored python ctx version"
       author = "Christian Burkard"
       reference = "https://twitter.com/s0md3v/status/1529005758540808192"
