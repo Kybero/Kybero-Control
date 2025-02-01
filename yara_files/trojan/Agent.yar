@@ -1,5 +1,6 @@
 rule Trojan_Agent_A_con {
     meta:
+        threat_name = "Trojan/Agent.A!con"
         description = "Detects trojan"
         author = "Kybero Labs"
 
@@ -13,6 +14,7 @@ rule Trojan_Agent_A_con {
 
 rule Trojan_Agent_B_con {
     meta:
+        threat_name = "Trojan/Agent.B!con"
         description = "Detects trojan"
         author = "Kybero Labs"
 
@@ -26,6 +28,7 @@ rule Trojan_Agent_B_con {
 
 rule Trojan_Agent_C_con {
     meta:
+        threat_name = "Trojan/Agent.C!con"
         description = "Detects trojan"
         author = "Kybero Labs"
 
@@ -38,6 +41,7 @@ rule Trojan_Agent_C_con {
 
 rule Trojan_Agent_D_con {
    meta:
+      threat_name = "Trojan/Agent.D!con"
       description = "Unknown malware mentioned by Cylance"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
