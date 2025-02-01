@@ -1,5 +1,6 @@
 rule Trojan_Winnti_A_con {
    meta:
+      threat_name = "Trojan/Winnti.A!con"
       description = "Winnti signature mentioned by Cylance"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
