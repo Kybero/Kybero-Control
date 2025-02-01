@@ -345,113 +345,8 @@ rule Trojan_Generic_P {
 }
 
 rule Trojan_Generic_Q {
-    meta:
-        author = "Elastic Security"
-        id = "dd1e4d1a-2e2f-4af0-bd66-2e12367dd064"
-        fingerprint = "a00e3e08e11d10a7a4bf1110a5110e4d0a4d2acf0974aca9dfc1ad5f21c80df7"
-        creation_date = "2021-01-12"
-        last_modified = "2021-08-23"
-        threat_name = "Windows.Cryptominer.Generic"
-        reference_sample = "7ac1d7b6107307fb2442522604c8fa56010d931392d606ac74dcea6b7125954b"
-        severity = 100
-        arch_context = "x86"
-        scan_context = "file"
-        license = "Elastic License v2"
-        os = "windows"
-    strings:
-        $a = { EF F9 66 0F EF FA 66 0F FE FE 66 0F 6F B0 B0 00 00 00 66 0F }
-    condition:
-        all of them
-}
-
-rule Trojan_Generic_R {
-    meta:
-        author = "Elastic Security"
-        id = "f53cfb9b-0286-4e7e-895e-385b6f64c58a"
-        fingerprint = "2b66960ee7d423669d0d9e9dcd22ea6e1c0843893e5e04db92237b67b43d645c"
-        creation_date = "2024-03-05"
-        last_modified = "2024-06-12"
-        threat_name = "Windows.Cryptominer.Generic"
-        reference_sample = "a9870a03ddc6543a5a12d50f95934ff49f26b60921096b2c8f2193cb411ed408"
-        severity = 50
-        arch_context = "x86"
-        scan_context = "file, memory"
-        license = "Elastic License v2"
-        os = "windows"
-    strings:
-        $a1 = { 48 81 EC B8 00 00 00 0F AE 9C 24 10 01 00 00 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 0F AE 94 24 14 01 00 00 4C 8B A9 E0 00 00 00 4C 8B CA 4C 8B 51 20 4C 8B C1 4C 33 11 ?? ?? ?? ?? ?? ?? 4C 8B 59 28 }
-    condition:
-        all of them
-}
-
-rule Trojan_Generic_S {
-    meta:
-        threat_name = "Trojan/Generic.S"
-        author = "ditekSHen"
-        description = "Detects executables referencing many IR and analysis tools"
-    strings:
-        $s1 = "procexp.exe" nocase ascii wide
-        $s2 = "perfmon.exe" nocase ascii wide
-        $s3 = "autoruns.exe" nocase ascii wide
-        $s4 = "autorunsc.exe" nocase ascii wide
-        $s5 = "ProcessHacker.exe" nocase ascii wide
-        $s6 = "procmon.exe" nocase ascii wide
-        $s7 = "sysmon.exe" nocase ascii wide
-        $s8 = "procdump.exe" nocase ascii wide
-        $s9 = "apispy.exe" nocase ascii wide
-        $s10 = "dumpcap.exe" nocase ascii wide
-        $s11 = "emul.exe" nocase ascii wide
-        $s12 = "fortitracer.exe" nocase ascii wide
-        $s13 = "hookanaapp.exe" nocase ascii wide
-        $s14 = "hookexplorer.exe" nocase ascii wide
-        $s15 = "idag.exe" nocase ascii wide
-        $s16 = "idaq.exe" nocase ascii wide
-        $s17 = "importrec.exe" nocase ascii wide
-        $s18 = "imul.exe" nocase ascii wide
-        $s19 = "joeboxcontrol.exe" nocase ascii wide
-        $s20 = "joeboxserver.exe" nocase ascii wide
-        $s21 = "multi_pot.exe" nocase ascii wide
-        $s22 = "ollydbg.exe" nocase ascii wide
-        $s23 = "peid.exe" nocase ascii wide
-        $s24 = "petools.exe" nocase ascii wide
-        $s25 = "proc_analyzer.exe" nocase ascii wide
-        $s26 = "regmon.exe" nocase ascii wide
-        $s27 = "scktool.exe" nocase ascii wide
-        $s28 = "sniff_hit.exe" nocase ascii wide
-        $s29 = "sysanalyzer.exe" nocase ascii wide
-        $s30 = "CaptureProcessMonitor.sys" nocase ascii wide
-        $s31 = "CaptureRegistryMonitor.sys" nocase ascii wide
-        $s32 = "CaptureFileMonitor.sys" nocase ascii wide
-        $s33 = "Control.exe" nocase ascii wide
-        $s34 = "rshell.exe" nocase ascii wide
-        $s35 = "smc.exe" nocase ascii wide
-    condition:
-         uint16(0) == 0x5a4d and 4 of them
-}
-
-rule Trojan_Generic_T {
-    meta:
-        threat_name = "Trojan/Generic.T"
-        author = "ditekSHen"
-        description = "Detects executables packed with VMProtect."
-        snort2_sid = "930049-930051"
-        snort3_sid = "930017"
-    strings:
-        $s1 = ".vmp0" fullword ascii
-        $s2 = ".vmp1" fullword ascii
-    condition:
-        uint16(0) == 0x5a4d and all of them or
-        for any i in (0 .. pe.number_of_sections) : (
-            (
-                pe.sections[i].name == ".vmp0" or
-                pe.sections[i].name == ".vmp1"
-            )
-        )
-}
-
-rule Trojan_Generic_U {
    meta:
-      threat_name = "Trojan/Generic.U"
+      threat_name = "Trojan/Generic.Q"
       description = "Detects an XORed URL in an executable"
       author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/stvemillertime/status/1237035794973560834"
@@ -491,9 +386,9 @@ rule Trojan_Generic_U {
       and not pe.number_of_signatures > 0
 }
 
-rule Trojan_Generic_V {
+rule Trojan_Generic_R {
     meta:
-        threat_name = "Trojan/Generic.V"
+        threat_name = "Trojan/Generic.R"
         description = "Detects malware by known bad imphash or rich_pe_header_hash"
         reference = "https://yaraify.abuse.ch/statistics/"
         license = "Detection Rule License 1.1 https://github.com/SigmaHQ/Detection-Rule-License"
@@ -578,4 +473,69 @@ rule Trojan_Generic_V {
             //hash.md5(pe.rich_signature.clear_data) == "b6321cd8142ea3954c1a27b162787f7d"
         )
         and not 1 of ($fp*)
+}
+
+rule Trojan_Generic_S {
+    meta:
+        threat_name = "Trojan/Generic.S"
+        author = "ditekSHen"
+        description = "Detects executables referencing many IR and analysis tools"
+    strings:
+        $s1 = "procexp.exe" nocase ascii wide
+        $s2 = "perfmon.exe" nocase ascii wide
+        $s3 = "autoruns.exe" nocase ascii wide
+        $s4 = "autorunsc.exe" nocase ascii wide
+        $s5 = "ProcessHacker.exe" nocase ascii wide
+        $s6 = "procmon.exe" nocase ascii wide
+        $s7 = "sysmon.exe" nocase ascii wide
+        $s8 = "procdump.exe" nocase ascii wide
+        $s9 = "apispy.exe" nocase ascii wide
+        $s10 = "dumpcap.exe" nocase ascii wide
+        $s11 = "emul.exe" nocase ascii wide
+        $s12 = "fortitracer.exe" nocase ascii wide
+        $s13 = "hookanaapp.exe" nocase ascii wide
+        $s14 = "hookexplorer.exe" nocase ascii wide
+        $s15 = "idag.exe" nocase ascii wide
+        $s16 = "idaq.exe" nocase ascii wide
+        $s17 = "importrec.exe" nocase ascii wide
+        $s18 = "imul.exe" nocase ascii wide
+        $s19 = "joeboxcontrol.exe" nocase ascii wide
+        $s20 = "joeboxserver.exe" nocase ascii wide
+        $s21 = "multi_pot.exe" nocase ascii wide
+        $s22 = "ollydbg.exe" nocase ascii wide
+        $s23 = "peid.exe" nocase ascii wide
+        $s24 = "petools.exe" nocase ascii wide
+        $s25 = "proc_analyzer.exe" nocase ascii wide
+        $s26 = "regmon.exe" nocase ascii wide
+        $s27 = "scktool.exe" nocase ascii wide
+        $s28 = "sniff_hit.exe" nocase ascii wide
+        $s29 = "sysanalyzer.exe" nocase ascii wide
+        $s30 = "CaptureProcessMonitor.sys" nocase ascii wide
+        $s31 = "CaptureRegistryMonitor.sys" nocase ascii wide
+        $s32 = "CaptureFileMonitor.sys" nocase ascii wide
+        $s33 = "Control.exe" nocase ascii wide
+        $s34 = "rshell.exe" nocase ascii wide
+        $s35 = "smc.exe" nocase ascii wide
+    condition:
+         uint16(0) == 0x5a4d and 4 of them
+}
+
+rule Trojan_Generic_T {
+    meta:
+        threat_name = "Trojan/Generic.T"
+        author = "ditekSHen"
+        description = "Detects executables packed with VMProtect."
+        snort2_sid = "930049-930051"
+        snort3_sid = "930017"
+    strings:
+        $s1 = ".vmp0" fullword ascii
+        $s2 = ".vmp1" fullword ascii
+    condition:
+        uint16(0) == 0x5a4d and all of them or
+        for any i in (0 .. pe.number_of_sections) : (
+            (
+                pe.sections[i].name == ".vmp0" or
+                pe.sections[i].name == ".vmp1"
+            )
+        )
 }
