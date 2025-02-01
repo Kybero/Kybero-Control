@@ -1,5 +1,6 @@
 rule Ransom_Clop_gen {
     meta:
+        threat_name = "Ransom/Clop.A!con"
         author = "Felix Bilstein - yara-signator at cocacoding dot com"
         date = "2024-10-31"
         version = "1"
