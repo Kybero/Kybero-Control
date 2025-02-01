@@ -1,5 +1,6 @@
 rule Trojan_MEMZ_A_con {
     meta:
+        threat_name = "Trojan/MEMZ.A!con"
         description = "Detects MEMZ"
         author = "Kybero Labs"
 
