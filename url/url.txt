@@ -1,5 +1,6 @@
 204.16.169.54
 
+000webhostapp.com
 1000ena.com
 101doctor.com
 25u.com
@@ -53,6 +54,7 @@ defeatwax.ru
 dennenboom.com
 discoveryenglish.org
 donaldnathanlaw.com
+dego-gh.com
 devbydes.com.au
 directdownloader.com
 dns-report.com
