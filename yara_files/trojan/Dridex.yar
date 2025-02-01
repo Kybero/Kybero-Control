@@ -1,7 +1,7 @@
 rule Trojan_Dridex_A_con
 {
 	 meta:
-
+		threat_name = "Trojan/Dridex.A!con"
 		 description = "Rule to detect Dridex P2P based on the PDB"
 		 author = "Marc Rivero | McAfee ATR Team"
 		 date = "2014-11-29"
