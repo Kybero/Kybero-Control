@@ -1,6 +1,6 @@
-rule Ransom_Generic_A_con {
+rule Ransom_Generic_A {
    meta:
-      threat_name = "Ransom/GenRansomware.A!con"
+      threat_name = "Ransom/Generic.A"
       description = "Detects ransomware indicator"
       author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/lazarus-on-the-hunt-for-big-game/97757/"
