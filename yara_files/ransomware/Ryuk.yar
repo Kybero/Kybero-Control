@@ -1,7 +1,7 @@
 rule Ransom_Ryuk_A_con {
 
    meta:
-
+      threat_name = "Ransom/Ryuk.A!con"
       description = "Ryuk Ransomware hunting rule"
       author = "Christiaan Beek - McAfee ATR team"
       date = "2019-04-25"
