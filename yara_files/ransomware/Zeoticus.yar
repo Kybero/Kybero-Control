@@ -1,5 +1,6 @@
 rule Ransom_Zeoticus_A_con {
 	meta:
+		threat_name = "Ransom/Zeoticus.A!con"
 		description = "Zeoticus rule based on email addresses provided by SISA"
 		author = "Protectish"
 		reference = "https://www.sisainfosec.com/blogs/zeoticus-2-0-ransomware-all-you-need-to-know/"
