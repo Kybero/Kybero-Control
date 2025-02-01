@@ -1,5 +1,6 @@
 rule Ransom_BadRabbit_A_con {
    meta:
+      threat_name = "Ransom/BadRabbit.A!con"
       description = "Detects BadRabbit Ransomware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -31,6 +32,7 @@ rule Ransom_BadRabbit_A_con {
 
 rule Ransom_BadRabbit_B_con {
    meta:
+      threat_name = "Ransom/BadRabbit.B!con"
       description = "Auto-generated rule"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
