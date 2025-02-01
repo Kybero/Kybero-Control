@@ -149,12 +149,12 @@ rule Trojan_Generic_G {
 
 rule Trojan_Generic_H {
     meta:
+        threat_name = "Trojan/Generic.H"
         author = "Elastic Security"
         id = "02a87a20-a5b4-44c6-addc-c70b327d7b2c"
         fingerprint = "fb25a522888efa729ee6d43a3eec7ade3d08dba394f3592d1c3382a5f7a813c8"
         creation_date = "2022-03-04"
         last_modified = "2022-04-12"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "13037b749aa4b1eda538fda26d6ac41c8f7b1d02d83f47b0d187dd645154e033"
         severity = 100
         arch_context = "x86"
@@ -192,12 +192,12 @@ rule Trojan_Generic_I {
 
 rule Trojan_Generic_J {
     meta:
+        threat_name = "Trojan/Generic.J"
         author = "Elastic Security"
         id = "73ed7375-c8ab-4d95-ae66-62b1b02a3d1e"
         fingerprint = "a026cc2db3bfebca4b4ea6e9dc41c2b18d0db730754ef3131d812d7ef9cd17d6"
         creation_date = "2023-05-09"
         last_modified = "2023-06-13"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "2b17328a3ef0e389419c9c86f81db4118cf79640799e5c6fdc97de0fc65ad556"
         severity = 100
         arch_context = "x86"
@@ -213,12 +213,12 @@ rule Trojan_Generic_J {
 
 rule Trojan_Generic_K {
     meta:
+        threat_name = "Trojan/Generic.K"
         author = "Elastic Security"
         id = "96cdf3c4-6f40-4eb3-8bfd-b3c41422388a"
         fingerprint = "1037576e2c819031d5dc8067650c6b869e4d352ab7553fb5676a358059b37943"
         creation_date = "2023-05-09"
         last_modified = "2023-06-13"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "9a4d68de36f1706a3083de7eb41f839d8c7a4b8b585cc767353df12866a48c81"
         severity = 100
         arch_context = "x86"
@@ -234,12 +234,12 @@ rule Trojan_Generic_K {
 
 rule Trojan_Generic_L {
     meta:
+        threat_name = "Trojan/Generic.L"
         author = "Elastic Security"
         id = "f0c79978-2df9-4ae2-bc5d-b5366acff41b"
         fingerprint = "94b2a5784ae843b831f9ce34e986b2687ded5c754edf44ff20490b851e0261fc"
         creation_date = "2023-07-27"
         last_modified = "2023-09-20"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "8f800b35bfbc8474f64b76199b846fe56b24a3ffd8c7529b92ff98a450d3bd38"
         severity = 100
         arch_context = "x86"
@@ -255,12 +255,12 @@ rule Trojan_Generic_L {
 
 rule Trojan_Generic_M {
     meta:
+        threat_name = "Trojan/Generic.M"
         author = "Elastic Security"
         id = "40899c85-bb49-412c-8081-3a1359957c52"
         fingerprint = "d02a17a3b9efc2fd991320a5db7ab2384f573002157cddcd12becf137e893bd8"
         creation_date = "2023-12-15"
         last_modified = "2024-01-12"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "88eb4f2e7085947bfbd03c69573fdca0de4a74bab844f09ecfcf88e358af20cc"
         severity = 100
         arch_context = "x86"
@@ -277,12 +277,12 @@ rule Trojan_Generic_M {
 
 rule Trojan_Generic_N {
     meta:
+        threat_name = "Trojan/Generic.N"
         author = "Elastic Security"
         id = "9997489c-4e22-4df1-90cb-dd098ca26505"
         fingerprint = "4c872be4e5eaf46c92e6f7d62ed0801992c36fee04ada1a1a3039890e2893d8c"
         creation_date = "2024-01-31"
         last_modified = "2024-02-08"
-        threat_name = "Windows.Trojan.Generic"
         severity = 100
         arch_context = "x86"
         scan_context = "file, memory"
@@ -307,12 +307,12 @@ rule Trojan_Generic_N {
 
 rule Trojan_Generic_O {
     meta:
+        threat_name = "Trojan/Generic.O"
         author = "Elastic Security"
         id = "2993e5a5-26b2-4cfd-8130-4779abcfecb2"
         fingerprint = "709015984e3c9abaf141b76bf574921466493475182ca30a56dbc3671030b632"
         creation_date = "2024-03-18"
         last_modified = "2024-03-18"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "9f9b926cef69e879462d9fa914dda8c60a01f3d409b55afb68c3fb94bf1a339b"
         severity = 100
         arch_context = "x86"
@@ -327,12 +327,12 @@ rule Trojan_Generic_O {
 
 rule Trojan_Generic_P {
     meta:
+        threat_name = "Trojan/Generic.P"
         author = "Elastic Security"
         id = "0e135d58-efd9-4d5e-95d8-ddd597f8e6a8"
         fingerprint = "e1a9e0c4e5531ae4dd2962285789c3bb8bb2621aa20437384fc3abcc349718c6"
         creation_date = "2024-03-19"
         last_modified = "2024-03-19"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "a91c1d3965f11509d1c1125210166b824a79650f29ea203983fffb5f8900858c"
         severity = 100
         arch_context = "x86"
