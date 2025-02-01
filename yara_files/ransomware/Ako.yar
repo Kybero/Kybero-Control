@@ -1,5 +1,6 @@
 rule Ransom_Ako_A_con {
     meta:
+        threat_name = "Ransom/Ako.A!con"
         description = "Detects Ako"
         author = "Kybero Labs"
 
