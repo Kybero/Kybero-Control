@@ -1,5 +1,6 @@
 rule Ransom_Cryptolocker_A_con {
     meta:
+	threat_name = "Ransom/Cryptolocker.A!con"
         author = "ditekSHen"
         description = "Detects Cryptolocker ransomware variants (Betarasite)"
     strings:
