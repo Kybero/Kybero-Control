@@ -66,6 +66,7 @@ Trojan/CoinMiner.A ... 5f2c0c0deec474964b5c89d61916a6dc01ec981aca42ec9d17c076b96
 Trojan/CoinMiner.B ... 4c8103af33747653ce87634dc858a68907e510dca16b642fd503bc1f9b0362ac
 Trojan/CoinMiner.C ... 439eeef675982d0da6c2b1766a08902243b8723c966d04080ebd5c8e8c4ddcba
 Trojan/CoinMiner.D ... 99f5b1d7c0413b9b32977591ab868a920f8afc5e95ad3d3593c2b2e0d1306efa
+Trojan/CoinMiner.E ... a17f11df64e5f802a50c4fe012ccf8b10c3adaba880b553a18e46a4579c4b075
 Trojan/Comrerop.A ... 6da889e63468f102fd7a57edef76aa207e58477467b3351f05465fcd3f28fa2c
 Trojan/Cutwail.A ... 006dbc90141cf989379230ee574dc1ae3bc0cf7c2da7229a3b2d7d98e9302e38
 Trojan/Dridex.A ... 2f89db171c4449a0d6d6c4756d4695d2d7535ab77c4b60edcadeac8a5f8890e8
