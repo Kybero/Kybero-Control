@@ -40,3 +40,88 @@ rule Trojan_CoinMiner_B_con {
    condition:
       filesize < 3000KB and 1 of them
 }
+
+rule Trojan_CoinMiner_C_con {
+    meta:
+        threat_name = "Trojan/CoinMiner.C!con"
+        author = "ditekSHen"
+        description = "Detects executables referencing many cryptocurrency mining wallets or apps. Observed in information stealers"
+    strings:
+        $app1 = "Ethereum" nocase ascii wide
+        $app2 = "Bitcoin" nocase ascii wide
+        $app3 = "Litecoin" nocase ascii wide
+        $app4 = "NavCoin4" nocase ascii wide
+        $app5 = "ByteCoin" nocase ascii wide
+        $app6 = "PotCoin" nocase ascii wide
+        $app7 = "Gridcoin" nocase ascii wide
+        $app8 = "VERGE" nocase ascii wide
+        $app9 = "DogeCoin" nocase ascii wide
+        $app10 = "FlashCoin" nocase ascii wide
+        $app11 = "Sia" nocase ascii wide
+        $app12 = "Reddcoin" nocase ascii wide
+        $app13 = "Electrum" nocase ascii wide
+        $app14 = "Emercoin" nocase ascii wide
+        $app15 = "Exodus" nocase ascii wide
+        $app16 = "BBQCoin" nocase ascii wide
+        $app17 = "Franko" nocase ascii wide
+        $app18 = "IOCoin" nocase ascii wide
+        $app19 = "Ixcoin" nocase ascii wide
+        $app20 = "Mincoin" nocase ascii wide
+        $app21 = "YACoin" nocase ascii wide
+        $app22 = "Zcash" nocase ascii wide
+        $app23 = "devcoin" nocase ascii wide
+        $app24 = "Dash" nocase ascii wide
+        $app25 = "Monero" nocase ascii wide
+        $app26 = "Riot Games\\" nocase ascii wide
+        $app27 = "qBittorrent\\" nocase ascii wide
+        $app28 = "Battle.net\\" nocase ascii wide
+        $app29 = "Steam\\" nocase ascii wide
+        $app30 = "Valve\\Steam\\" nocase ascii wide
+        $app31 = "Anoncoin" nocase ascii wide
+        $app32 = "DashCore" nocase ascii wide
+        $app33 = "DevCoin" nocase ascii wide
+        $app34 = "DigitalCoin" nocase ascii wide
+        $app35 = "Electron" nocase ascii wide
+        $app36 = "ElectrumLTC" nocase ascii wide
+        $app37 = "FlorinCoin" nocase ascii wide
+        $app38 = "FrancoCoin" nocase ascii wide
+        $app39 = "JAXX" nocase ascii wide
+        $app40 = "MultiDoge" ascii wide
+        $app41 = "TerraCoin" ascii wide
+        $app42 = "Electrum-LTC" ascii wide
+        $app43 = "ElectrumG" ascii wide
+        $app44 = "Electrum-btcp" ascii wide
+        $app45 = "MultiBitHD" ascii wide
+        $app46 = "monero-project" ascii wide
+        $app47 = "Bitcoin-Qt" ascii wide
+        $app48 = "BitcoinGold-Qt" ascii wide
+        $app49 = "Litecoin-Qt" ascii wide
+        $app50 = "BitcoinABC-Qt" ascii wide
+        $app51 = "Exodus Eden" ascii wide
+        $app52 = "myether" ascii wide
+        $app53 = "factores-Binance" ascii wide
+        $app54 = "metamask" ascii wide
+        $app55 = "kucoin" ascii wide
+        $app56 = "cryptopia" ascii wide
+        $app57 = "binance" ascii wide
+        $app58 = "hitbtc" ascii wide
+        $app59 = "litebit" ascii wide
+        $app60 = "coinEx" ascii wide
+        $app61 = "blockchain" ascii wide
+        $app62 = "\\Armory" ascii wide
+        $app63 = "\\Atomic" ascii wide
+        $app64 = "\\Bytecoin" ascii wide
+        $app65 = "simpleos" ascii wide
+        $app66 = "WalletWasabi" ascii wide
+        $app67 = "atomic\\" ascii wide
+        $app68 = "Guarda\\" ascii wide
+        $app69 = "Neon\\" ascii wide
+        $app70 = "Blockstream\\" ascii wide
+        $app71 = "GreenAddress Wallet\\" ascii wide
+        $app72 = "bitpay\\" ascii wide
+
+        $ne1 = "C:\\src\\pgriffais_incubator-w7\\Steam\\main\\src\\external\\libjingle-0.4.0\\talk/base/scoped_ptr.h" fullword wide
+        $ne2 = "\"%s\\bin\\%slauncher.exe\" -hproc %x -hthread %x -baseoverlayname %s\\%s" fullword ascii
+    condition:
+        uint16(0) == 0x5a4d and (not any of ($ne*) and 6 of them)
+}
