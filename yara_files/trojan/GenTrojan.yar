@@ -2,6 +2,7 @@ import "pe"
 
 rule Trojan_Generic_A {
     meta:
+        threat_name = "Trojan/Generic.A"
         description = "Detects trojan executables posing as the EICAR test file"
         author = "Kybero Labs"
 
@@ -15,12 +16,12 @@ rule Trojan_Generic_A {
 
 rule Trojan_Generic_B {
     meta:
+        threat_name = "Trojan/Generic.B"
         author = "Elastic Security"
         id = "a681f24a-7054-4525-bcf8-3ee64a1d8413"
         fingerprint = "6323ed5b60e728297de19c878cd96b429bfd6d82157b4cf3475f3a3123921ae0"
         creation_date = "2021-06-10"
         last_modified = "2021-08-23"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "a796f316b1ed7fa809d9ad5e9b25bd780db76001345ea83f5035a33618f927fa"
         severity = 25
         arch_context = "x86"
@@ -37,12 +38,12 @@ rule Trojan_Generic_B {
 
 rule Trojan_Generic_C {
     meta:
+        threat_name = "Trojan/Generic.C"
         author = "Elastic Security"
         id = "ae824b13-eaae-49e6-a965-ff10379f3c41"
         fingerprint = "8658996385aac060ebe9eab45bbea8b05b9008926bb3085e5589784473bc3086"
         creation_date = "2022-02-03"
         last_modified = "2022-04-12"
-        threat_name = "Windows.Trojan.Generic"
         severity = 100
         arch_context = "x86"
         scan_context = "file, memory"
@@ -59,12 +60,12 @@ rule Trojan_Generic_C {
 
 rule Trojan_Generic_D {
     meta:
+        threat_name = "Trojan/Generic.D"
         author = "Elastic Security"
         id = "eb47e754-9b4d-45e7-b76c-027d03326c6c"
         fingerprint = "b71d13a34e5f791612ed414b8b0e993b1f476a8398a1b0be39046914ac5ac21d"
         creation_date = "2022-02-03"
         last_modified = "2022-04-12"
-        threat_name = "Windows.Trojan.Generic"
         severity = 100
         arch_context = "x86"
         scan_context = "file, memory"
@@ -81,12 +82,12 @@ rule Trojan_Generic_D {
 
 rule Trojan_Generic_E {
     meta:
+        threat_name = "Trojan/Generic.E"
         author = "Elastic Security"
         id = "c7fd8d38-eaba-424d-b91a-098c439dab6b"
         fingerprint = "dc14cd519b3bbad7c2e655180a584db0a4e2ad4eea073a52c94b0a88152b37ba"
         creation_date = "2022-02-17"
         last_modified = "2022-04-12"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "a1702ec12c2bf4a52e11fbdab6156358084ad2c662c8b3691918ef7eabacde96"
         severity = 100
         arch_context = "x86"
@@ -105,12 +106,12 @@ rule Trojan_Generic_E {
 
 rule Trojan_Generic_F {
     meta:
+        threat_name = "Trojan/Generic.F"
         author = "Elastic Security"
         id = "bbe6c282-e92d-4021-bdaf-189337e4abf0"
         fingerprint = "e004d77440a86c23f23086e1ada6d1453178b9c2292782c1c88a7b14151c10fe"
         creation_date = "2022-03-02"
         last_modified = "2022-04-12"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "a44c46d4b9cf1254aaabd1e689f84c4d2c3dd213597f827acabface03a1ae6d1"
         severity = 100
         arch_context = "x86"
@@ -125,12 +126,12 @@ rule Trojan_Generic_F {
 
 rule Trojan_Generic_G {
     meta:
+        threat_name = "Trojan/Generic.G"
         author = "Elastic Security"
         id = "889b1248-a694-4c9b-8792-c04e582e814c"
         fingerprint = "a5e0c2bbd6a297c01f31eccabcbe356730f50f074587f679da6caeca99e54bc1"
         creation_date = "2022-03-11"
         last_modified = "2022-04-12"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "a48d57a139c7e3efa0c47f8699e2cf6159dc8cdd823b16ce36257eb8c9d14d53"
         severity = 100
         arch_context = "x86"
@@ -168,13 +169,13 @@ rule Trojan_Generic_H {
 
 rule Trojan_Generic_I {
     meta:
+        threat_name = "Trojan/Generic.I"
         author = "Elastic Security"
         id = "4fbff084-5280-4ff8-9c21-c437207231a5"
         fingerprint = "728d7877e7a16fbb756b1c3b6c90ff3b718f0f750803b6a1549cb32c69be0dfc"
         creation_date = "2023-02-28"
         last_modified = "2023-04-23"
         description = "Shellcode found in REF2924, belonging to for now unknown trojan"
-        threat_name = "Windows.Trojan.Generic"
         reference_sample = "7010a69ba77e65e70f4f3f4a10af804e6932c2218ff4abd5f81240026822b401"
         severity = 100
         arch_context = "x86"
