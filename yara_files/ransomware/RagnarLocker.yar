@@ -3,7 +3,7 @@ import "pe"
 rule Ransom_RagnarLocker_A_con {
 
    meta:
-   
+      threat_name = "Ransom/RagnarLocker.A!con"
       description = "Rule to detect RagnarLocker samples"
       author = "McAfee ATR Team"
       date = "2020-04-15"
