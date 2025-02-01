@@ -2,6 +2,7 @@ import "pe"
 
 rule Ransom_Sodinokibi_A_con {
    meta:
+      threat_name = "Ransom/Sodinokibi.A!con"
       description = "Using a recently disclosed vulnerability in Oracle WebLogic, criminals use it to install a new variant of ransomware called Sodinokibi"
       author = "Christiaan Beek | McAfee ATR team"
       date = "2019-05-13"
@@ -28,6 +29,7 @@ rule Ransom_Sodinokibi_A_con {
 
 rule Ransom_Sodinokibi_B_con {
     meta:
+        threat_name = "Ransom/Sodinokibi.B!con"
         description = "This rule detect Sodinokobi Ransomware in memory in old samples and perhaps future."
         author = "McAfee ATR team"
         rule_version = "v1"
