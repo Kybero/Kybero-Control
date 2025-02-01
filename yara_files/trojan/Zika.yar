@@ -1,5 +1,6 @@
 rule Trojan_Zika_A_con {
     meta:
+        threat_name = "Trojan/Zika.A!con"
         description = "Detects Zika"
         author = "Kybero Labs"
 
