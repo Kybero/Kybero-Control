@@ -1,3 +1,5 @@
+import "pe"
+
 rule Virus_Neshta_A_con {
    meta:
       threat_name = "Virus/Neshta.A!con"
