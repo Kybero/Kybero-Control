@@ -1,7 +1,7 @@
 rule Trojan_Emotet_A_con
 {
     meta:
-    
+        threat_name = "Trojan/Emotet.A!con"
         description = "Rule to detect unpacked Emotet"
         author = "Marc Rivero | McAfee ATR Team"
         date = "2020-07-21"
