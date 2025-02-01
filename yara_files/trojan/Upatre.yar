@@ -1,6 +1,7 @@
 rule Trojan_Upatre_A_con {
 
     meta:
+	threat_name = "Trojan/Upatre.A!con"
         author = "Felix Bilstein - yara-signator at cocacoding dot com"
         date = "2024-10-31"
         version = "1"
@@ -170,6 +171,7 @@ rule Trojan_Upatre_A_con {
 
 rule Trojan_Upatre_B_con {
 	meta:
+		threat_name = "Trojan/Upatre.B!con"
 		author = "Florian Roth"
 		description = "Detects Upatre malware - file hazgurut.exe"
 		reference = "https://weankor.vxstream-sandbox.com/sample/6b857ef314938d37997c178ea50687a281d8ff9925f0c4e70940754643e2c0e3?environmentId=7"
