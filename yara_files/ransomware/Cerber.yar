@@ -1,5 +1,6 @@
 rule Ransom_Cerber_A_con {
 	meta:
+		threat_name = "Ransom/Cerber.A!con"
 		description = "Rule to detect Ammyy Admin / Cerber 3.0 Ransomware"
 		author = "Rich Walchuck"
 		source = "AA_v3.5.exe"
