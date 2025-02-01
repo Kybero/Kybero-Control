@@ -1,11 +1,11 @@
 rule Ransom_Lockbit_A_con {
     meta:
+        threat_name = "Ransom/Lockbit.A!con"
         author = "Elastic Security"
         id = "89e64044-74e4-4679-b6ad-bfb9b264330c"
         fingerprint = "ec45013d3ecbc39ffce5ac18d5bf8b0d18bcadd66659975b0a9f26bcae0a5b49"
         creation_date = "2021-08-06"
         last_modified = "2021-10-04"
-        threat_name = "Windows.Ransomware.Lockbit"
         reference_sample = "0d6524b9a1d709ecd9f19f75fa78d94096e039b3d4592d13e8dbddf99867182d"
         severity = 100
         arch_context = "x86"
@@ -22,12 +22,12 @@ rule Ransom_Lockbit_A_con {
 
 rule Ransom_Lockbit_B_con {
     meta:
+        threat_name = "Ransom/Lockbit.B!con"
         author = "Elastic Security"
         id = "a1c60939-e257-420d-87ed-f31f30f2fc2a"
         fingerprint = "a41fb21e82ee893468393428d655b03ce251d23f34acb54bbf01ae0eb86817bf"
         creation_date = "2021-08-06"
         last_modified = "2021-10-04"
-        threat_name = "Windows.Ransomware.Lockbit"
         reference_sample = "0d6524b9a1d709ecd9f19f75fa78d94096e039b3d4592d13e8dbddf99867182d"
         severity = 100
         arch_context = "x86"
@@ -42,12 +42,12 @@ rule Ransom_Lockbit_B_con {
 
 rule Ransom_Lockbit_C_con {
     meta:
+        threat_name = "Ransom/Lockbit.C!con"
         author = "Elastic Security"
         id = "369e1e94-3fbb-4828-bb78-89d26e008105"
         fingerprint = "9cf4c112c0ee708ae64052926681e8351f1ccefeb558c41e875dbd9e4bdcb5f2"
         creation_date = "2022-07-05"
         last_modified = "2022-07-18"
-        threat_name = "Windows.Ransomware.Lockbit"
         reference_sample = "d61af007f6c792b8fb6c677143b7d0e2533394e28c50737588e40da475c040ee"
         severity = 100
         arch_context = "x86"
