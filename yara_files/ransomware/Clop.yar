@@ -1,4 +1,4 @@
-rule Ransom_Clop_gen {
+rule Ransom_Clop_A_con {
     meta:
         threat_name = "Ransom/Clop.A!con"
         author = "Felix Bilstein - yara-signator at cocacoding dot com"
