@@ -1,5 +1,6 @@
 rule Trojan_Mansabo_A_con {
     meta:
+        threat_name = "Trojan/Mansabo.A!con"
         description = "Detects Mansabo"
         author = "Kybero Labs"
 
