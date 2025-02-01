@@ -2,6 +2,7 @@ import "pe"
 
 rule Trojan_CoinMiner_A_con {
    meta:
+      threat_name = "Trojan/CoinMiner.A!con"
       description = "Rule to detect Coinminer malware"
       author = "Trellix ATR"
       date = "2021-07-22"
