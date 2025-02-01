@@ -48,6 +48,7 @@ rule Ransom_Ryuk_A_con {
 
 rule Ransom_Ryuk_B_con {
    meta:
+      threat_name = "Ransom/Ryuk.B!con"
       description = "Detecting latest Ryuk samples"
       author = "McAfe ATR"
       date = "2020-10-13"
@@ -90,6 +91,7 @@ rule Ransom_Ryuk_B_con {
 
 rule Ransom_Ryuk_C_con {
 	meta:
+		threat_name = "Ransom/Ryuk.C!con"
 		description = "Rule to detect latest May 2021 compiled Ryuk variant"
 		author = "Marc Elias | McAfee ATR Team"
 		date = "2021-05-21"
