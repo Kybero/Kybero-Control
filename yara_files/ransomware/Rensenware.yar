@@ -1,5 +1,6 @@
 rule Ransom_Rensenware_A_con {
     meta:
+        threat_name = "Ransom/Rensenware.A!con"
         description = "Detects Rensenware"
         author = "Kybero Labs"
 
