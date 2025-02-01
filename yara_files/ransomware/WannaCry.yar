@@ -1,5 +1,6 @@
-rule Ransom_WannaCry_gen {
+rule Ransom_WannaCry_A_con {
    meta:
+      threat_name = "Ransom/WannaCry.A!con"
       description = "Detects WannaCry Ransomware"
       author = "Florian Roth (Nextron Systems) (based on rule by US CERT)"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-132A"
@@ -56,6 +57,7 @@ rule Ransom_WannaCry_A_con {
 
 rule Ransom_WannaCry_B_con {
    meta:
+      threat_name = "Ransom/WannaCry.B!con"
       description = "Detects WannaCry Ransomware VBS"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -73,6 +75,7 @@ rule Ransom_WannaCry_B_con {
 
 rule Ransom_WannaCry_C_con {
    meta:
+      threat_name = "Ransom/WannaCry.C!con"
       description = "Detects WannaCry Ransomware BATCH File"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -91,6 +94,7 @@ rule Ransom_WannaCry_C_con {
 
 rule Ransom_WannaCry_D_con {
    meta:
+      threat_name = "Ransom/WannaCry.D!con"
       description = "Detects WannaCry Ransomware Note"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
