@@ -1,5 +1,6 @@
 rule Ransom_Darkside_A_con {
     meta:
+        threat_name = "Ransom/Darkside.A!con"
         description = "Darkside YARA rule created by McAfee"
         author = "Marc Rivero | McAfee ATR Team"
         date = "2020-08-11"
