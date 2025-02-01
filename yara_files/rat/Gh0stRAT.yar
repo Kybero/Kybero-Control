@@ -1,6 +1,6 @@
 rule RAT_Gh0stRAT_A_con {
 	meta:
-    threat_name = "RAT/Gh0stRAT.A!con"
+    		threat_name = "RAT/Gh0stRAT.A!con"
 		description = "Detects Gh0st RAT mentioned in Cylance' Ghost Dragon Report"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
@@ -45,9 +45,9 @@ rule RAT_Gh0stRAT_A_con {
 		) or ( 6 of them )
 }
 
-rule RAT_Gh0stRAT_B_con" {
+rule RAT_Gh0stRAT_B_con {
 	meta:
-    threat_name = "RAT/Gh0stRAT.B!con"
+    		threat_name = "RAT/Gh0stRAT.B!con"
 		description = "Detects Gh0st RAT mentioned in Cylance' Ghost Dragon Report"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
@@ -71,7 +71,7 @@ rule RAT_Gh0stRAT_B_con" {
 
 rule RAT_Gh0stRAT_C_con {
 	meta:
-    threat_name = "RAT/Gh0stRAT.C!con"
+   	 	threat_name = "RAT/Gh0stRAT.C!con"
 		description = "Detects Gh0st RAT mentioned in Cylance' Ghost Dragon Report"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
