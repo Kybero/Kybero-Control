@@ -1,5 +1,6 @@
 rule Ransom_Petya_A_con {
     meta:
+	threat_name = "Ransom/Petya.A!con"
         author = "kevoreilly"
         description = "Petya Payload"
         cape_type = "Petya Payload"
@@ -13,6 +14,7 @@ rule Ransom_Petya_A_con {
 
 rule Ransom_Petya_B_con {
 	meta:
+		threat_name = "Ransom/Petya.B!con"
 		description = "Ransom.Win32.Petya information by Florian Roth"
 		author = "Florian Roth"
 		reference = "http://www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Petya-riegelt-den-gesamten-Rechner-ab-3150917.html"
@@ -31,14 +33,15 @@ rule Ransom_Petya_B_con {
 }
 
 rule Ransom_Petya_C_con {
-meta:
-    description = "Ransom.Win32.Petya info from CCN-CERT"
-    author = "CCN-CERT"
-    version = "1.0"
-strings:
-    $a1 = { C1 C8 14 2B F0 03 F0 2B F0 03 F0 C1 C0 14 03 C2 }
-    $a2 = { 46 F7 D8 81 EA 5A 93 F0 12 F7 DF C1 CB 10 81 F6 }
-    $a3 = { 0C 88 B9 07 87 C6 C1 C3 01 03 C5 48 81 C3 A3 01 00 00 }
-condition:
-    all of them
+	meta:
+	    threat_name = "Ransom/Petya.C!con"
+	    description = "Ransom.Win32.Petya info from CCN-CERT"
+	    author = "CCN-CERT"
+	    version = "1.0"
+	strings:
+	    $a1 = { C1 C8 14 2B F0 03 F0 2B F0 03 F0 C1 C0 14 03 C2 }
+	    $a2 = { 46 F7 D8 81 EA 5A 93 F0 12 F7 DF C1 CB 10 81 F6 }
+	    $a3 = { 0C 88 B9 07 87 C6 C1 C3 01 03 C5 48 81 C3 A3 01 00 00 }
+	condition:
+	    all of them
 }
