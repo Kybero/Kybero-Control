@@ -1,5 +1,6 @@
 rule Trojan_NavaShield_A_con {
     meta:
+        threat_name = "Trojan/NavaShield.A!con"
         description = "Detects NavaShield"
         author = "Kybero Labs"
 
