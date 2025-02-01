@@ -1,5 +1,6 @@
 rule Ransom_Annabelle_A_con {
     meta:
+        threat_name = "Ransom/Annabelle.A!con"
         description = "Detects Annabelle"
         author = "Kybero Labs"
 
