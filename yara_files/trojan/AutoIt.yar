@@ -1,6 +1,7 @@
 rule Trojan_AutoIt_A_con
 {
     meta:
+        threat_name = "Trojan/AutoIt.A!con"
         id = "1HD8y9jsBZi1HDN82XCpZx"
         fingerprint = "7d7623207492860e4196e8c8a493b874bb3042c83f19e61e1d958e79a09bc8f8"
         version = "1.0"
@@ -31,6 +32,7 @@ rule Trojan_AutoIt_A_con
 rule Trojan_AutoIt_B_con
 {
     meta:
+        threat_name = "Trojan/AutoIt.B!con"
         id = "vpilwARgwZCuMLJPuubYB"
         fingerprint = "87dfe76f69bd344860faf3dc46f16b56a2c86a0a3f3763edf8f51860346a16c2"
         version = "1.0"
