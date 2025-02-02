@@ -5,7 +5,7 @@ rule Adware_Adposhel_A_con {
         author = "Kybero Labs"
 
     strings:
-        $s1 = "PRIVATELY OWNED ENTERPRISE "SINETEKO"1"
+        $s1 = "PRIVATELY OWNED ENTERPRISE \"SINETEKO\"1"
 
     condition:
         uint16(0) == 0x5a4d and all of them
