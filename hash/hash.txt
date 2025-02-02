@@ -7,6 +7,7 @@ Adware/CsdiMonetize.A ... abdb3ddead86b6c8110faabecb05ced7bfa86902aada984545654e
 Adware/CsdiMonetize.B ... 20289138697ed27804ea685c60131af23ceba59747a27671e918e3c567cb6f3b
 Adware/Elex.A ... 800987704efa7a3521aac21f45677960d48964cb893231ff6cde39652b4d5a3f
 Adware/Elex.B ... d2db9b8b24071e90e3bb347f65ba30d4d1c1f567ac7e18b40f54570b17b350cc
+Adware/HPDefender.A ... 210fc6a013dcd79d2e530da23a6dccb4768b9a37afedaa859db0bf26ba6671e8
 Adware/ICLoader.A ... ab1df10b43862beba1eb979b790bf4979e2b28444bdf461a3e581212e66ed5d7
 Adware/ICLoader.B ... 7d8b39fbfcfd2529e2a1539976e31a4dde7a2081d093fd944d5bbd1b92cdc5b6
 Adware/Jetmedia.A ... 932f70479b3f9d5405c5609cf6131af325941f55aae21d69f7705d7cadbd6e67
