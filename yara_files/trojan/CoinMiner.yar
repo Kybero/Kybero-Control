@@ -203,3 +203,40 @@ rule Trojan_CoinMiner_G_con {
    condition:
       ( uint16(0) == 0x5a4d and filesize < 6000KB and 1 of them )
 }
+
+rule Trojan_CoinMiner_H_con {
+   meta:
+      threat_name = "Trojan/CoinMiner.H!con"
+      description = "Detects command line parameters often used by crypto mining software"
+      author = "Florian Roth (Nextron Systems)"
+      reference = "https://www.poolwatch.io/coin/monero"
+      date = "2021-10-24"
+      score = 65
+      id = "afe5a63a-08c3-5cb7-b4b1-b996068124b7"
+   strings:
+      $s01 = " --cpu-priority="
+      $s02 = "--donate-level=0"
+      $s03 = " -o pool."
+      $s04 = " -o stratum+tcp://"
+      $s05 = " --nicehash"
+      $s06 = " --algo=rx/0 "
+
+      /* base64 encoded: --donate-level= */
+      $se1 = "LS1kb25hdGUtbGV2ZWw9"
+      $se2 = "0tZG9uYXRlLWxldmVsP"
+      $se3 = "tLWRvbmF0ZS1sZXZlbD"
+
+      /* 
+         base64 encoded:
+         stratum+tcp:// 
+         stratum+udp:// 
+      */
+      $se4 = "c3RyYXR1bSt0Y3A6Ly"
+      $se5 = "N0cmF0dW0rdGNwOi8v"
+      $se6 = "zdHJhdHVtK3RjcDovL"
+      $se7 = "c3RyYXR1bSt1ZHA6Ly"
+      $se8 = "N0cmF0dW0rdWRwOi8v"
+      $se9 = "zdHJhdHVtK3VkcDovL"
+   condition:
+      filesize < 5000KB and 1 of them
+}
