@@ -13,6 +13,7 @@ rule Trojan_Winnti_A_con {
 
 rule Trojan_Winnti_B_con {
    meta:
+      threat_name = "Trojan/Winnti.B!con"
       description = "Winnti sample - file fonfig.exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -29,6 +30,7 @@ rule Trojan_Winnti_B_con {
 
 rule Trojan_Winnti_C_con {
    meta:
+      threat_name = "Trojan/Winnti.C!con"
       description = "Winnti sample - file NlaifSvc.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
