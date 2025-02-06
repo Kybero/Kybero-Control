@@ -1,4 +1,4 @@
-rule Ransom/BlinkerObject_A_con {
+rule Ransom_BlinkerObject_A_con {
     meta:
         threat_name = "Ransom/BlinkerObject.A!con"
         description = "Detects BlinkerObject"
@@ -12,7 +12,7 @@ rule Ransom/BlinkerObject_A_con {
         uint16(0) == 0x5a4d and all of them
 }
 
-rule Ransom/BlinkerObject_B_con {
+rule Ransom_BlinkerObject_B_con {
     meta:
         threat_name = "Ransom/BlinkerObject.B!con"
         description = "Detects BlinkerObject certificate"
