@@ -5,7 +5,7 @@ rule Worm_Klez_A_con {
         author = "Kybero Labs"
 
     strings:
-        $s1 = "\krn132.exe"
+        $s1 = "\\krn132.exe"
 
     condition:
         uint16(0) == 0x5a4d and all of them
