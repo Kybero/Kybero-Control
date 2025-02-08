@@ -1,5 +1,6 @@
 Adware/AdLoad.A ... f7f1e54f77ef454b557715576bf220e14cfb678a4de4a5fd29cf50e42c57ee80
 Adware/AdLoad.B ... 9f43849f63f990b0c21c4030986cc84131474df76a6dcdf4702f2fadd06bde92
+Adware/AdMoke.A ... c4d53903b44b76a7761abcd975a2b2de45e61962729f4ee20d518bff44b57e43
 Adware/Adposhel.A ... 1bfcdbfd55a3868662972436e062833ea63c852a48fe3b2cc615e32f5a387028
 Adware/Adposhel.B ... 0a104928dda5b6e4a04c050d33bf75fec29fe7b843d47f7f89c527cce5e1d456
 Adware/Adposhel.C ... fcc7c4b3cd0119815bc6e7779cfc40914feadc813e59f5e8aed7d3e0225ffb44
@@ -97,12 +98,14 @@ Ransom/PopcornTime.A ... fd370e998215667c31ae1ac6ee81223732d7c7e7f44dc9523f2517a
 Ransom/SureRansom.A ... 9182432e60ea007cbfae7eed92082e7ef0f2d00674dfe1b2ad956f7c9d494adb
 Ransom/Widia.A ... 7488e97be511f0ea554db95fd64f3c5ce9bfbe8bfab79c6ed59ca61aa1c8e9bc
 Ransom/Zeoticus.A ... b541a9f64fe12c31fff460ab0deef392a8441eeb102805ed578effc6e6eaed96
+Rogue/Antivirus2010.A ... 557c810bc310de50f707352c695f21157e1ee386b2ad6066bb8e87307a946c38
 Rogue/Rango.A ... 27a06da110b2667e35933047f6f98b7db600394e43c52832869f2ed2459cb348
 Rogue/Wolfram.A ... b9afb9c819302396858d2966371d904d9dd8661da835fd0ccc74758aae84e519
 Rootkit/Agent.A ... 86068d1d63e88ed79e32c95036aa41a5f5e7bba108ef4d8c25c919fb213fb10a
 Rootkit/Agent.B ... e8d1dd8173720c1f58970abedd2c1513aac75fb3d2d3ab73dd4961282c1c373f
 Rootkit/Alureon.A ... f5cda0ed5acc67a07c9e243507a61951e3a06e14810f5f577d9e407e8b334d9c
 Rootkit/Jadtre.A ... 8ed84826493779d349a839e4cc724cc3b1447458b01d0bb4b2b694031a42202b
+Rootkit/Koutodoor.A ... c1bb1e7511a2ad8ae94117ad192bf75357ab57a94c17bec444b5f7f843d6cf86
 Spyware/Socelars.A ... 6b8e827612f6c5fa7867ca240bc9d507f922939dd4c4c499046748d662a55778
 Spyware/Socelars.B ... 5ced3f42e6d1169dce9ed17dbbc0867e1d52c856b76438d514383604c139db28
 Spyware/Socelars.C ... 35df8512c90bbbc2e7ce447aaf6ca0e2dd45884dde05847a33527eb26cc36f1e
@@ -202,6 +205,8 @@ Trojan/CoinMiner.AM ... f1c5f23e698bd5bee7d3a8ffdd4c5b11e436b7df0a38f1393fe53a1b
 Trojan/CoinMiner.AN ... cd2d3cb9d4d95d7acd0f557b4867f0d5e509af2029adcf1fe5e409efe54cf284
 Trojan/CoinMiner.AO ... bd792fc304c010dc963dcec7083c2e7877fdd35f51b2a129e586d3464f698db0
 Trojan/Comrerop.A ... 6da889e63468f102fd7a57edef76aa207e58477467b3351f05465fcd3f28fa2c
+Trojan/Cosmu.A ... 0026c9fb9494a07058902968a9d4da098ae5f7be022d5e95a9391efb69b58f5e
+Trojan/Cosmu.B ... 7e8f6be8afe943ee908387f7ea6bf11daea74cbee44f36199cf4f1cc50d9ef7f
 Trojan/Crackonosh.A ... 8e1260bbf43e54ef60672fc2efac525e961b5dee67146063aefcfda2d7161d89
 Trojan/Cutwail.A ... 006dbc90141cf989379230ee574dc1ae3bc0cf7c2da7229a3b2d7d98e9302e38
 Trojan/Dridex.A ... 2f89db171c4449a0d6d6c4756d4695d2d7535ab77c4b60edcadeac8a5f8890e8
