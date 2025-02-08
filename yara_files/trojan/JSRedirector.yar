@@ -53,7 +53,8 @@ rule Trojan_JSRedirector_D_con {
 
     strings:
         $s1 = "<script language='javascript'>document.write(unescape("
+        $s2 = "<script type=\"text/javascript\">(function() { var"
 
     condition:
-        all of them
+        1 of them
 }
