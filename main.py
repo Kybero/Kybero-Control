@@ -87,11 +87,12 @@ async def scan_file(file: UploadFile = File(...)):
     # YARA rule detection
     yara_matches = yara_rules.match(data=contents)
     if yara_matches:
+        threat_meta = yara_matches[0].meta.get("threat_name", "UnknownMalware")  # Extract threat_name from meta
         return {
             "file_name": file.filename,
             "threat_detected": True,
             "detection_method": "YARA",
-            "threat_name": yara_matches[0].rule
+            "threat_name": threat_meta
         }
 
     return {
