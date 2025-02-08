@@ -210,6 +210,7 @@ Trojan/Cosmu.B ... 7e8f6be8afe943ee908387f7ea6bf11daea74cbee44f36199cf4f1cc50d9e
 Trojan/Crackonosh.A ... 8e1260bbf43e54ef60672fc2efac525e961b5dee67146063aefcfda2d7161d89
 Trojan/Cutwail.A ... 006dbc90141cf989379230ee574dc1ae3bc0cf7c2da7229a3b2d7d98e9302e38
 Trojan/Dridex.A ... 2f89db171c4449a0d6d6c4756d4695d2d7535ab77c4b60edcadeac8a5f8890e8
+Trojan/Dybalom.A ... 9a86cb341ff1cddd7fb04d62db96cebfb53050642fa3abdcc0f2ef5b752cf1a2
 Trojan/Egguard.A ... 11d339b02c09e29f6be17b51e26f92c2b04fde83ce0600b18c61ed5035bfe075
 Trojan/Emotet.A ... 1be3c5a54c962af1d266f0bb97ca2340e76885825159d1a78ed88a508978f29f
 Trojan/GenericTools.A ... b3aa584960c1e257543d64133bc11ed63f218f15698cb46c46b486dedc0e1079
