@@ -51,6 +51,7 @@ Adware/Zdengo.A ... a032ecb83173eb28d8555bc56181bc0bc08fc1dc2c1ff5f03155ace7f4f0
 Adware/Zdengo.B ... 3cfb51f9a94b211e1a312d8b8bc5a27341689457cceb7b34556ea70aa9c8d844
 Backdoor/DCRat.A ... 64ab5742ab66c18908f5cf66cfc6b3788114e8f6dcc93c81ffe0ada4ff4ad447
 Backdoor/Regiskazi.A ... cecec28fe33c780c2dc6226c30a9f78ee9cbabaf684e3c844bc9f698f6911024
+Backdoor/SmokeLoader.A ... 4b00565a29eeb0446393d0538e8f24de232339cf3ffb6a76a2bce3ba160c2066
 Backdoor/Zapchast.A ... f3ec15f0c9a4d268e609f58af1e328c3c7fec75fcf44eaa163c4d69981b35a4a
 EICARTestFile.A ... 275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f
 Exploit/Blacole.A ... e3b0ae9f1218464cf1bbddbe8f3b7df8a73fdbaa1975d198bc750fc128ad961a
