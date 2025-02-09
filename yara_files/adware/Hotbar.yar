@@ -10,3 +10,16 @@ rule Adware_Hotbar_A_con {
     condition:
         uint16(0) == 0x5a4d and $s
 }
+
+rule Adware_Hotbar_B_con {
+    meta:
+        threat_name = "Adware/Hotbar.B!con"
+        description = "Detects Hotbar certificate"
+        author = "Kybero Labs"
+
+    strings:
+        $s = "appbundler.com0"
+
+    condition:
+        uint16(0) == 0x5a4d and $s
+}
