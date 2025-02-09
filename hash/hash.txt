@@ -96,6 +96,7 @@ Ransom/Jackpot.A ... ff68685fdcd4c84426418963ce5cb961775419863cd02e8f2f69c6d46b3
 Ransom/Lockbit.A ... 82d89a75d80e80e4be42c9eb79e401558c9fa3175648cd0c0467f2de1a07a908
 Ransom/PewCrypt.A ... 0e06e9f5f272d6b22274382cf282a4f58c37621a6855f69b1c91a7d72fc92354
 Ransom/PopcornTime.A ... fd370e998215667c31ae1ac6ee81223732d7c7e7f44dc9523f2517adffa58d51
+Ransom/SadComputer.A ... a949bdbfa8255741acf437b34b506310c7210707f84aef6d8ef85e9c2ff1993a
 Ransom/SureRansom.A ... 9182432e60ea007cbfae7eed92082e7ef0f2d00674dfe1b2ad956f7c9d494adb
 Ransom/Widia.A ... 7488e97be511f0ea554db95fd64f3c5ce9bfbe8bfab79c6ed59ca61aa1c8e9bc
 Ransom/Zeoticus.A ... b541a9f64fe12c31fff460ab0deef392a8441eeb102805ed578effc6e6eaed96
@@ -225,6 +226,7 @@ Trojan/KillProc.A ... 662ed4a2153333a2789f3b5e5b5af9e8b1cf1c8a9656e73bb9ee3e28e9
 Trojan/Kuping.A ... f04728ab30c0baf07beacbdfa0ca4a227831de35a4d8236bffaf55f56f599fb8
 Trojan/PonyStealer.A ... 8f4675d743094203572f6d0ac73f722571a9b4fce64f3ca6991798d57d14d9d2
 Trojan/Popcorn.A ... 768f798842bbe107fb897077ae2f0c8cd66bfb1ba873141f526702c35a6157f1
+Trojan/Qakbot.A ... 5a6157eefc8d0b1089a5bfdee351379b27baff4c40b432fd22e0cbe1f6102fab
 Trojan/RedlineStealer.A ... 6826ba902b06d9957f8adf0e9d75c6cb1c61bac908ba43267e3f603b5d0451b4
 Trojan/Redooca.A ... e284f378e48d771c92ee774d3762f11e9428dd7423a7fad5abd605dc7cd0578d
 Trojan/Scar.A ... 422c932d36addc9f706109bd99544f43014518f83cc489b3d09e888f305cb8b6
