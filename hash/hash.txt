@@ -241,6 +241,7 @@ Trojan/XMRig.A ... 62f3a21db99bcd45371ca4845c7296af81ce3ff6f0adcaee3f1698317dd48
 Trojan/XMRig.B ... 96558bd6be9bcd8d25aed03b996db893ed7563cf10304dffe6423905772bbfa1
 Trojan/Zbot.A ... b85ca0c24ad7233e0dbb12df3e1f42d64b0028b43af61564bb3a6120f2f601c5
 Trojan/Zbot.B ... 9f0f8e78387d81f7c7d9b96e536925aa47aecf46c8956eff0b0fccd2b12514c0
+Trojan/Zbot.C ... 3ea08769108768f5f315e035f2eb587df2adb88fd9c07fe2f10afc570c150c93
 Trojan/ZippyLoader.A ... b954779b162cbfba32633ae371cdd5bdd1f45915f270d4ec69cab571290288c4
 Virus/Jeefo.A ... 4af7b1e69440d47eec29578951e0b2a7ffebffd342abf3eece6aaa87b921cf01
 Worm/Brontok.A ... e8328b481567299ee32b40ec9ef468cb4103a0a4eeee68f8693257d591ed6ad2
