@@ -35,3 +35,16 @@ rule Infostealer_Lumma_A_con {
     condition:
         $m1 or (4 of ($s*) and $chunk_1 )
 }
+
+rule Infostealer_Lumma_B_con {
+    meta:
+	threat_name = "Infostealer/Lumma.B!con"
+        author = "ditekshen"
+        description = "Detects downloader executables dropped by fake captcha"
+    strings:
+        $s1 = "</script>MZ" ascii
+        $s2 = "window.close();" ascii
+        $s3 = "eval(" ascii
+    condition:
+        uint16(0) == 0x5a4d and all of them
+}
