@@ -183,6 +183,7 @@ Trojan/AutoIt.B ... a7c130ee81e3ccc146d9b744aaf13f31b2423066b283febcce571ce81344
 Trojan/Banbra.A ... 1c38c300d2b0a7a1533674cab7d955bda1137d584c5079b3de4dc59ac51548a5
 Trojan/BlackScreen.A ... 4426a89bca8ee86d517b4edc7df6559846bf165219184ab12f9e436caf2c230e
 Trojan/Bounce.A ... 9d7777e2576c9e19b845010cbf26607049a653cb26f72e165efdab0f0d6de069
+Trojan/Bounce.B ... 95678d6445b73a83b9ad7b81c67c82aa57001f1ad88f8197bfd38ea1beba6aad
 Trojan/Chapak.A ... 35e03d35de8e5d2b5ee3d489253d94355ddb4a09cca9e18350f4ad3c65b6db85
 Trojan/Chapak.B ... b6df23b8ccc6ca0e80a9f64ecd6f85787514de698013308ae78c20341ff84c3c
 Trojan/Chapak.C ... d991aade5bab199ffed94dbd004b11e709daa3b257eb2e8be2cc8b6cf62f121f
